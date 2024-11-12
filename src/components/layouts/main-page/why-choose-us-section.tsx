@@ -2,17 +2,17 @@ import { Code, Users, Lightbulb, CheckCircle } from "lucide-react"
 
 export default function WhyChooseUsSection() {
   return (
-    <section className="py-16 bg-gray-50">
+    <section className="py-16 bg-gray-50 dark:bg-gray-900 text-primary border-t border-green/30">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold text-center mb-12">Why Choose Us</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {strengths.map((strength, index) => (
-            <div key={index} className="bg-white p-6 rounded-lg shadow-md transition-all duration-300 hover:shadow-lg">
+            <div key={index} className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md shadow-green/30 transition-all duration-300 hover:shadow-lg hover:shadow-green/40 cursor-pointer">
               <div className="flex items-center mb-4">
-                <strength.icon className="w-8 h-8 text-[#0ea47a] mr-3" />
+                <strength.icon className="w-8 h-8 text-green mr-3" />
                 <h3 className="text-xl font-semibold">{strength.title}</h3>
               </div>
-              <p className="text-gray-600">{strength.description}</p>
+              <p className="text-gray-600 dark:text-gray-400">{strength.description}</p>
             </div>
           ))}
         </div>

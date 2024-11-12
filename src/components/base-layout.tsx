@@ -24,7 +24,7 @@ export default async function BaseLayout({ children, locale }: Props) {
             gilroy.variable,
             havelock.variable
         )} translate="no" lang={locale}>
-            <body className={"flex h-full flex-col text-black font-gilroy bg-[#f3f4f6]"}>
+            <body className={"flex h-full flex-col text-black font-gilroy bg-[#f3f4f6] dark:bg-gray-900"}>
                 <NextIntlClientProvider messages={messages}>
                     <Navbar />
                     <div className="min-h-screen pt-[100px]">

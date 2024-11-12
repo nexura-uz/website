@@ -5,12 +5,12 @@ import { Link } from '@/i18n/routing'
 
 export default function BlogHighlightsSection() {
   return (
-    <section className="py-16 bg-gray-50">
+    <section className="py-16 bg-gray-50 dark:bg-gray-900 text-primary border-t border-green/30">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold text-center mb-12">Latest Insights</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
           {blogPosts.map((post, index) => (
-            <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden">
+            <div key={index} className="bg-white dark:bg-gray-800 rounded-xl shadow-md shadow-green/30 transition-all duration-300 hover:shadow-lg hover:shadow-green/40 overflow-hidden">
               <Image
                 src={post.image}
                 alt={post.title}
@@ -19,11 +19,11 @@ export default function BlogHighlightsSection() {
                 className="w-full h-48 object-cover"
               />
               <div className="p-6">
-                <h3 className="text-xl font-semibold mb-2 text-[#0ea47a]">{post.title}</h3>
-                <p className="text-gray-600 mb-4">{post.description}</p>
+                <h3 className="text-xl font-semibold mb-2 text-green">{post.title}</h3>
+                <p className="text-gray-600 dark:text-gray-400 mb-4">{post.description}</p>
                 <Link
                   href={post.link}
-                  className="text-[#0ea47a] font-medium hover:underline inline-flex items-center"
+                  className="text-green font-medium hover:underline inline-flex items-center"
                 >
                   Read More
                   <ArrowRight className="ml-2 h-4 w-4" />
@@ -35,7 +35,7 @@ export default function BlogHighlightsSection() {
         <div className="text-center">
           <Button
             asChild
-            className="inline-flex items-center px-6 py-3 bg-[#0ea47a] text-white font-semibold rounded-lg hover:bg-[#0c8d68] transition-colors duration-300"
+            className="inline-flex items-center px-6 py-3 bg-green text-white font-semibold rounded-xl hover:bg-[#0c8d68] transition-colors duration-300"
           >
             <Link href="/blog">
               Read Our Blog

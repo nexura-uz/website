@@ -4,24 +4,24 @@ import Image from "next/image"
 
 export default function AboutUsSection() {
   return (
-    <section className="py-16 bg-white">
+    <section className="py-16 bg-background text-primary">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center mb-12">
           <h2 className="text-3xl font-bold mb-4">About Nexura</h2>
-          <p className="text-xl text-gray-600 mb-6">
+          <p className="text-xl text-gray-600 dark:text-gray-400 mb-6">
             Nexura specializes in creating websites, mobile apps, and digital solutions tailored to our clients unique needs. We transform ideas into powerful digital experiences.
           </p>
-          <p className="text-2xl font-semibold text-[#0ea47a]">Innovative Solutions. Lasting Impact.</p>
+          <p className="text-2xl font-semibold text-green">Innovative Solutions. Lasting Impact.</p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           {coreValues.map((value, index) => (
             <div key={index} className="text-center">
               <div className="w-16 h-16 mx-auto mb-4">
-                <value.icon className="w-full h-full text-[#0ea47a]" />
+                <value.icon className="w-full h-full text-green" />
               </div>
               <h3 className="text-xl font-semibold mb-2">{value.title}</h3>
-              <p className="text-gray-600">{value.description}</p>
+              <p className="text-gray-600 dark:text-gray-400">{value.description}</p>
             </div>
           ))}
         </div>
@@ -32,14 +32,14 @@ export default function AboutUsSection() {
             alt="Nexura Team"
             width={800}
             height={400}
-            className="w-full h-auto rounded-lg shadow-lg"
+            className="w-full h-auto rounded-xl shadow-lg shadow-green/30"
           />
         </div>
 
         <div className="text-center">
           <Link
             href="/about"
-            className="inline-flex items-center px-6 py-3 bg-[#0ea47a] text-white font-semibold rounded-lg hover:bg-[#0c8d68] transition-colors duration-300"
+            className="inline-flex items-center px-6 py-3 bg-green text-white font-semibold rounded-xl hover:bg-[#0c8d68] transition-colors duration-300"
           >
             Learn More About Us
             <ArrowRight className="ml-2 h-5 w-5" />

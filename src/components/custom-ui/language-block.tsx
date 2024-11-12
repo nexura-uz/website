@@ -31,7 +31,7 @@ const languages = [
     },
 ]
 
-export default function ChangeLanguageBlock() {
+export default function LanguageBlock() {
     const locale = useLocale();
     const router = useRouter();
     const params = useParams();

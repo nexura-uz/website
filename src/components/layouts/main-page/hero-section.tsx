@@ -4,25 +4,27 @@ import { useState, useEffect } from 'react'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
 import { Button } from "@/components/ui/button"
+import useThemeStore from '@/sores/theme-store'
 
 export default function HeroSection() {
   const [isVisible, setIsVisible] = useState(false)
+  const { isDarkMode } = useThemeStore();
 
   useEffect(() => {
     setIsVisible(true)
   }, [])
 
   return (
-    <section className="relative bg-gray-50 overflow-hidden">
+    <section className="relative overflow-hidden text-primary">
       {/* Abstract background shapes */}
       <div className="absolute inset-0 z-0">
         <svg className="absolute left-0 top-0 h-full w-full" viewBox="0 0 100 100" preserveAspectRatio="none">
           <motion.path
             d="M0,0 L100,0 L100,100 L0,100 Z"
-            fill="#f3f4f6"
+            fill={isDarkMode ? "#111827" : "#f3f4f6"}
             initial={{ pathLength: 0 }}
-            animate={{ pathLength: 1 }}
-            transition={{ duration: 2, ease: "easeInOut" }}
+            animate={{ pathLength: 1, fill: isDarkMode ? "#111827" : "#f3f4f6" }}
+            transition={{ duration: 1, ease: "easeInOut" }}
           />
           <motion.path
             d="M0,50 Q25,0 50,50 T100,50"
@@ -43,17 +45,17 @@ export default function HeroSection() {
             animate={{ opacity: isVisible ? 1 : 0, y: isVisible ? 0 : 20 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-4">
+            <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-4">
               Empowering Digital Experiences with Frontend Excellence
             </h1>
-            <p className="text-xl text-gray-600 mb-8">
+            <p className="text-xl text-gray-600 dark:text-gray-400 mb-8">
               Web and mobile solutions tailored to elevate your brand
             </p>
             <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
-              <Button className="bg-[#0ea47a] hover:bg-[#0c8d68] text-white px-8 py-3 rounded-md text-lg font-semibold transition-colors duration-300">
+              <Button className="bg-green hover:bg-[#0c8d68] text-white px-8 py-3 rounded-md text-lg font-semibold transition-colors duration-300">
                 Get Started
               </Button>
-              <Button variant="outline" className="bg-white text-[#0ea47a] border-[#0ea47a] hover:bg-[#0ea47a] hover:text-white px-8 py-3 rounded-md text-lg font-semibold transition-colors duration-300">
+              <Button variant="outline" className="bg-white text-green border-green hover:bg-green hover:text-white px-8 py-3 rounded-md text-lg font-semibold transition-colors duration-300">
                 View Our Work
               </Button>
             </div>
@@ -70,9 +72,9 @@ export default function HeroSection() {
               alt="Digital Interfaces Mockup"
               width={600}
               height={400}
-              className="rounded-lg shadow-2xl"
+              className="rounded-xl shadow-2xl"
             />
-            <div className="absolute -bottom-6 -right-6 w-24 h-24 bg-[#0ea47a] rounded-full opacity-20 animate-pulse"></div>
+            <div className="absolute -bottom-6 -right-6 w-24 h-24 bg-green rounded-full opacity-20 animate-pulse"></div>
           </motion.div>
         </div>
       </div>

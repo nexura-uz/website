@@ -3,14 +3,14 @@ import { Quote } from 'lucide-react'
 
 export default function ClientTestimonialsSection() {
   return (
-    <section className="py-16 bg-white">
+    <section className="py-16 bg-background text-primary">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold text-center mb-12">What Our Clients Say</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => (
-            <div key={index} className="bg-gray-50 p-6 rounded-lg shadow-md border-l-4 border-[#0ea47a]">
-              <Quote className="w-8 h-8 text-[#0ea47a] mb-4" />
-              <p className="text-gray-700 mb-4">{testimonial.quote}</p>
+            <div key={index} className="bg-gray-50 dark:bg-gray-800 p-6 rounded-xl shadow-md border-l-4 border-green">
+              <Quote className="w-8 h-8 text-green mb-4" />
+              <p className="text-gray-700 dark:text-gray-400 mb-4">{testimonial.quote}</p>
               <div className="flex items-center">
                 <Image
                   src={testimonial.avatar}
@@ -21,7 +21,7 @@ export default function ClientTestimonialsSection() {
                 />
                 <div>
                   <h3 className="font-semibold">{testimonial.name}</h3>
-                  <p className="text-sm text-gray-600">{testimonial.position}</p>
+                  <p className="text-sm text-gray-600 dark:text-gray-400">{testimonial.position}</p>
                 </div>
               </div>
               <div className="mt-4">
