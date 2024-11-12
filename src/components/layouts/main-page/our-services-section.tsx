@@ -1,5 +1,5 @@
+import { Link } from "@/i18n/routing"
 import { ArrowRight } from "lucide-react"
-import Link from "next/link"
 
 export default function OurServicesSection() {
   return (
@@ -20,7 +20,7 @@ export default function OurServicesSection() {
         <div className="text-center">
           <Link
             href="/services"
-            className="inline-flex items-center px-6 py-3 bg-green text-white font-semibold rounded-xl hover:bg-[#0c8d68] transition-colors duration-300"
+            className="inline-flex items-center px-6 py-3 bg-green text-white font-semibold rounded-xl hover:bg-dark-green transition-colors duration-300"
           >
             Learn More About Our Services
             <ArrowRight className="ml-2 h-5 w-5" />

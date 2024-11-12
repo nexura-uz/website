@@ -52,7 +52,7 @@ export default function HeroSection() {
               Web and mobile solutions tailored to elevate your brand
             </p>
             <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
-              <Button className="bg-green hover:bg-[#0c8d68] text-white px-8 py-3 rounded-md text-lg font-semibold transition-colors duration-300">
+              <Button className="bg-green hover:bg-dark-green text-white px-8 py-3 rounded-md text-lg font-semibold transition-colors duration-300">
                 Get Started
               </Button>
               <Button variant="outline" className="bg-white text-green border-green hover:bg-green hover:text-white px-8 py-3 rounded-md text-lg font-semibold transition-colors duration-300">

@@ -39,7 +39,7 @@ export default function AboutUsSection() {
         <div className="text-center">
           <Link
             href="/about"
-            className="inline-flex items-center px-6 py-3 bg-green text-white font-semibold rounded-xl hover:bg-[#0c8d68] transition-colors duration-300"
+            className="inline-flex items-center px-6 py-3 bg-green text-white font-semibold rounded-xl hover:bg-dark-green transition-colors duration-300"
           >
             Learn More About Us
             <ArrowRight className="ml-2 h-5 w-5" />

@@ -35,7 +35,7 @@ export default function BlogHighlightsSection() {
         <div className="text-center">
           <Button
             asChild
-            className="inline-flex items-center px-6 py-3 bg-green text-white font-semibold rounded-xl hover:bg-[#0c8d68] transition-colors duration-300"
+            className="inline-flex items-center px-6 py-3 bg-green text-white font-semibold rounded-xl hover:bg-dark-green transition-colors duration-300"
           >
             <Link href="/blog">
               Read Our Blog

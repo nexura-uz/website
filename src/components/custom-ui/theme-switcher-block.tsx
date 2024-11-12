@@ -17,9 +17,9 @@ const ThemeSwitcher = () => {
         className="hidden"
       />
       <span className="relative">
-        <span className="block w-14 h-7 bg-gray-300 dark:bg-gray-600 rounded-full shadow-inner p-0.5"></span>
+        <span className="block w-10 h-6 bg-gray-300 dark:bg-gray-600 rounded-full shadow-inner"></span>
         <span
-          className={`absolute top-0 left-0 w-8 h-7 bg-white dark:bg-yellow-400 rounded-full shadow-md transform transition-all duration-300 ease-in-out
+          className={`absolute top-0 left-0 w-6 h-6 bg-white dark:bg-yellow-400 rounded-full shadow-md transform transition-all duration-300 ease-in-out
           ${isDarkMode ? 'translate-x-6' : 'translate-x-0'}
           `}
         >

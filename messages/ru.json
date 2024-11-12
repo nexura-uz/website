@@ -2,5 +2,12 @@
     "Home": {
         "title": "Nexura",
         "welcome": "добро пожаловать"
+    },
+    "Menus": {
+        "about-us": "About Us",
+        "services": "Services",
+        "portfolio": "Porfolio",
+        "blog": "Blog",
+        "contact-us": "Contact Us"
     }
 }

@@ -1,10 +1,30 @@
-import Link from 'next/link'
+"use client"
+
 import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
-import { Instagram, Linkedin, Twitter, Facebook } from 'lucide-react'
+import { Instagram, Linkedin, Twitter, Facebook, Terminal, AlertCircle, Loader2 } from 'lucide-react'
 import Image from 'next/image'
+import { Link } from "@/i18n/routing"
+import { useTranslations } from "next-intl"
+import { menus } from "@/lib/contstants"
+import { useActionState } from "react"
+import {
+  Alert,
+  AlertDescription,
+  AlertTitle,
+} from "@/components/ui/alert"
+import { newspaperFormSubmit } from "@/app/actions/newspaper-actions"
+import { useFormStatus } from "react-dom"
+
+const initialState = {
+  message: "",
+  success: false
+}
 
 export default function Footer() {
+  const [state, formAction] = useActionState(newspaperFormSubmit, initialState)
+  const t = useTranslations("Menus")
+
   return (
     <footer className="bg-gray-900 text-gray-300 border-t border-green/30">
       <div className="max-w-7xl mx-auto px-4 py-12 sm:px-6 lg:px-8">
@@ -27,10 +47,10 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-semibold text-white mb-4">Quick Links</h3>
             <ul className="space-y-2">
-              {['About Us', 'Services', 'Portfolio', 'Blog', 'Contact Us'].map((item) => (
+              {menus.map((item) => (
                 <li key={item}>
                   <Link href={`/${item.toLowerCase().replace(' ', '-')}`} className="hover:text-white transition-colors">
-                    {item}
+                    {t(`${item}`)}
                   </Link>
                 </li>
               ))}
@@ -41,19 +61,19 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-semibold text-white mb-4">Connect With Us</h3>
             <div className="flex space-x-4">
-              <Link href="#" className="hover:text-[#0ea47a] transition-colors">
+              <Link href="#" className="hover:text-green transition-colors">
                 <Instagram className="w-6 h-6" />
                 <span className="sr-only">Instagram</span>
               </Link>
-              <Link href="#" className="hover:text-[#0ea47a] transition-colors">
+              <Link href="#" className="hover:text-green transition-colors">
                 <Linkedin className="w-6 h-6" />
                 <span className="sr-only">LinkedIn</span>
               </Link>
-              <Link href="#" className="hover:text-[#0ea47a] transition-colors">
+              <Link href="#" className="hover:text-green transition-colors">
                 <Twitter className="w-6 h-6" />
                 <span className="sr-only">Twitter</span>
               </Link>
-              <Link href="#" className="hover:text-[#0ea47a] transition-colors">
+              <Link href="#" className="hover:text-green transition-colors">
                 <Facebook className="w-6 h-6" />
                 <span className="sr-only">Facebook</span>
               </Link>
@@ -63,15 +83,34 @@ export default function Footer() {
           {/* Newsletter Signup */}
           <div>
             <h3 className="text-lg font-semibold text-white mb-4">Stay Updated</h3>
-            <form className="space-y-2">
+            <form className="space-y-2" action={formAction}>
               <Input
+                name="email"
                 type="email"
                 placeholder="Enter your email"
                 className="bg-gray-800 border-gray-700 text-white placeholder-gray-400"
+                required
               />
-              <Button type="submit" className="w-full bg-[#0ea47a] hover:bg-[#0c8d68] text-white">
-                Subscribe
-              </Button>
+              <SubmitButton />
+              {state?.message ? (
+                state?.success ?
+                  <Alert>
+                    <Terminal className="h-4 w-4" />
+                    <AlertTitle>Heads up!</AlertTitle>
+                    <AlertDescription>
+                      {state?.message}
+                    </AlertDescription>
+                  </Alert>
+                  :
+                  <Alert variant="destructive">
+                    <AlertCircle className="h-4 w-4" />
+                    <AlertTitle>Error</AlertTitle>
+                    <AlertDescription>
+                      {state?.message}
+                    </AlertDescription>
+                  </Alert>
+              ) : ""
+              }
             </form>
           </div>
         </div>
@@ -90,5 +129,17 @@ export default function Footer() {
         </div>
       </div>
     </footer>
+  )
+}
+
+
+function SubmitButton() {
+  const { pending } = useFormStatus()
+
+  return (
+    <Button type="submit" aria-disabled={pending} disabled={pending} className="w-full bg-green hover:bg-dark-green text-white">
+      {pending && <Loader2 className="animate-spin" />}
+      Subscribe
+    </Button>
   )
 }
