@@ -68,7 +68,7 @@ export default function Page() {
                             height={"350"}
                             className='w-full mt-5 rounded-xl'
                             initial={{ boxShadow: '0 0 0 rgba(0, 0, 0, 0)' }}
-                            animate={{ boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)' }}
+                            animate={{ boxShadow: '0 4px 6px -1px rgba(14, 164, 122, 0.1), 0 2px 4px -1px rgba(14, 164, 122, 0.06)' }}
                             transition={{ duration: 0.5 }}
                         >
                         </motion.iframe>
