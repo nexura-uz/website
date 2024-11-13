@@ -2,12 +2,14 @@ import Image from 'next/image'
 import { ArrowRight } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Link } from '@/i18n/routing'
+import { useTranslations } from 'next-intl'
 
 export default function BlogHighlightsSection() {
+  const t = useTranslations("BlogHighlightsSection")
   return (
     <section className="py-16 bg-white dark:bg-gray-900 text-primary border-t border-green/30">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center mb-12">Latest Insights</h2>
+        <h2 className="text-3xl font-bold text-center mb-12">{t("title")}</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
           {blogPosts.map((post, index) => (
             <div key={index} className="bg-white dark:bg-gray-800 rounded-xl shadow-md shadow-green/30 transition-all duration-300 hover:shadow-lg hover:shadow-green/40 overflow-hidden">
@@ -38,7 +40,7 @@ export default function BlogHighlightsSection() {
             className="inline-flex items-center px-6 py-3 bg-green text-white font-semibold rounded-xl hover:bg-dark-green transition-colors duration-300"
           >
             <Link href="/blog">
-              Read Our Blog
+              {t("read_our_blog")}
               <ArrowRight className="ml-2 h-5 w-5" />
             </Link>
           </Button>

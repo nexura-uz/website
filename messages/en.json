@@ -3,10 +3,146 @@
         "title": "Nexura",
         "welcome": "welcome"
     },
+    "Commands": {
+        "sent": "Form submitted successfully!",
+        "env_error": "Server error",
+        "fetch_error": "Connection error",
+        "type_error": "Invalid data",
+        "catch_error": "Something went wrong"
+    },
     "Menus": {
         "about-us": "About Us",
         "portfolio": "Porfolio",
         "blog": "Blog",
         "contact-us": "Contact Us"
+    },
+    "Navbar": {
+        "call_us": "Call to us"
+    },
+    "Footer": {
+        "sub_title": "Empowering Digital Experiences",
+        "address": "123 Tech Street, Digital City, 12345",
+        "phone": "Phone",
+        "links": "Quick Links",
+        "connect_with_us": "Connect With Us",
+        "stay_updated": "Stay Updated",
+        "subscribe": "Subscribe",
+        "all_rights": "All rights reserved.",
+        "privacy_policy": "Privacy Policy",
+        "terms": "Terms of Service"
+    },
+    "HeroSection": {
+        "title": "Empowering Digital Experiences with Frontend Excellence",
+        "text": "Web and mobile solutions tailored to elevate your brand",
+        "get_started": "Get Started",
+        "view_our_work": "View Our Work"
+    },
+    "AboutSection": {
+        "title": "About Nexura",
+        "text": "Nexura specializes in creating websites, mobile apps, and digital solutions tailored to our clients unique needs. We transform ideas into powerful digital experiences.",
+        "motto": "Innovative Solutions. Lasting Impact.",
+        "card_title_1": "Client-Centric Approach",
+        "card_description_1": "Delivering solutions that meet real business needs.",
+        "card_title_2": "Expertise in Frontend",
+        "card_description_2": "Mastery in modern frontend frameworks and responsive design.",
+        "card_title_3": "Innovation and Quality",
+        "card_description_3": "Using the latest technologies to create efficient, scalable products.",
+        "card_title_4": "Commitment to Growth",
+        "card_description_4": "Helping clients evolve in the digital landscape.",
+        "learn_more": "Learn More About Us"
+    },
+    "ServicesSection": {
+        "title": "Our Services",
+        "card_title_1": "Website Development",
+        "card_description_1": "Custom websites optimized for performance and user experience.",
+        "card_title_2": "Mobile App Development",
+        "card_description_2": "Cross-platform apps that reach users on both iOS and Android.",
+        "card_title_3": "UI/UX Design",
+        "card_description_3": "User-centered designs that enhance engagement and usability.",
+        "card_title_4": "E-commerce Solutions",
+        "card_description_4": "Scalable online stores with secure payment integrations.",
+        "card_title_5": "Cloud Solutions",
+        "card_description_5": "Robust cloud infrastructure for scalable and secure applications.",
+        "card_title_6": "Digital Marketing",
+        "card_description_6": "Strategic campaigns to boost your online presence and reach."
+    },
+    "PortfolioSection": {
+        "title": "Our Portfolio",
+        "view_all_projects": "View All Projects"
+    },
+    "WhyChooseUsSection": {
+        "title": "Why Choose Us",
+        "card_title_1": "Experienced Team",
+        "card_description_1": "Our skilled developers bring passion and expertise to every project, ensuring frontend excellence.",
+        "card_title_2": "Client-Focused",
+        "card_description_2": "We tailor every project to meet your specific needs, ensuring your vision becomes reality.",
+        "card_title_3": "Innovative Solutions",
+        "card_description_3": "We leverage the latest technologies to create scalable, high-performance solutions for your business.",
+        "card_title_4": "Quality and Reliability",
+        "card_description_4": "Our dedication to delivering on time with meticulous attention to detail sets us apart."
+    },
+    "BlogHighlightsSection": {
+        "title": "Latest Insights",
+        "read_our_blog": "Read Our Blog"
+    },
+    "ContactUsPage": {
+        "title": "Get in Touch with Nexura",
+        "sub_title": "We're here to help you with all your tech solution needs",
+        "contact_info": "Contact Information",
+        "send_us_message": "Send us a Message",
+        "full_name": "Full name",
+        "submit": "Submit"
+    },
+    "BlogPage": {
+        "title": "Nexura Tech Blog",
+        "sub_title": "Stay up-to-date with the latest trends, insights, and innovations in the world of technology."
+    },
+    "PortfolioPage": {
+        "title": "Innovating the Future with Nexura",
+        "sub_title": "We create cutting-edge technology solutions that drive business growth and transform industries.",
+        "get_in_touch": "Get in Touch"
+    },
+    "AboutPageHero": {
+        "title": "About Nexura",
+        "sub_title": "Innovating for a Connected Future",
+        "text": "At Nexura, we're passionate about leveraging cutting-edge technology to solve complex challenges and drive digital transformation."
+    },
+    "AboutPageStory": {
+        "title": "Our Story"
+    },
+    "AboutPage2Card": {
+        "card_title_1": "Our Mission",
+        "card_description_1": "To empower businesses with innovative technology solutions that drive growth, efficiency, and competitive advantage in the digital age.",
+        "card_title_2": "Our Vision",
+        "card_description_2": "To be the global leader in delivering transformative tech solutions that shape the future of industries and improve lives worldwide."
+    },
+    "AboutPageValues": {
+        "title": "Our Core Values",
+        "card_title_1": "Innovation",
+        "card_description_1": "Pushing boundaries in technology",
+        "card_title_2": "Customer Focus",
+        "card_description_2": "Putting our clients at the heart of everything we do",
+        "card_title_3": "Quality",
+        "card_description_3": "Delivering excellence in every project",
+        "card_title_4": "Integrity",
+        "card_description_4": "Upholding the highest ethical standards"
+    },
+    "AboutPageTeam": {
+        "title": "Meet the Team",
+        "member_text_1": "Visionary leader with 15+ years in tech innovation",
+        "member_text_2": "Tech guru driving our cutting-edge solutions",
+        "member_text_3": "Operations expert ensuring smooth project delivery",
+        "member_text_4": "Creative mind behind our user-centric designs"
+    },
+    "AboutPagePartners": {
+        "title": "Our Partners"
+    },
+    "AboutPageClients": {
+        "title": "What Our Clients Say"
+    },
+    "AboutPageContact": {
+        "title": "Ready to Innovate with Nexura?",
+        "text": "Let's discuss how we can help transform your business with our cutting-edge solutions.",
+        "contact_us": "Contact Us"
     }
 }

@@ -7,6 +7,7 @@ import { Input } from "@/components/ui/input"
 import PhoneNumberInput from "@/components/ui/phone-number-input"
 import { motion } from "framer-motion"
 import clsx from "clsx"
+import { useTranslations } from "next-intl"
 
 const initialState = {
     message: "",
@@ -15,12 +16,14 @@ const initialState = {
 
 
 export function ContactForm() {
+    const commands = useTranslations("Commands")
+    const t = useTranslations("ContactUsPage")
     const [state, formAction] = useActionState(contactFormSubmit, initialState)
 
     return (
         <form action={formAction} className="flex flex-col gap-4">
             <PhoneNumberInput />
-            <Input name="name" type="text" placeholder="Full name" className="bg-background text-primary" required />
+            <Input name="name" type="text" placeholder={t("full_name")} className="bg-background text-primary" required />
             <Input name="email" type="email" placeholder="Email" className="bg-background text-primary" required />
             <SubmitButton />
             {state?.message ? (
@@ -29,7 +32,7 @@ export function ContactForm() {
                     animate={{ opacity: 1, y: 0 }}
                     className={clsx("mt-4", state?.success ? "text-green-600" : "text-red-600")}
                 >
-                    {state?.message}
+                    {commands(`${state?.message}`)}
                 </motion.p>
             ) : ""
             }
@@ -39,6 +42,7 @@ export function ContactForm() {
 
 function SubmitButton() {
     const { pending } = useFormStatus()
+    const t = useTranslations("ContactUsPage")
 
     return (
         <motion.button
@@ -47,10 +51,10 @@ function SubmitButton() {
             type="submit"
             whileHover={{ scale: 1.05, backgroundColor: '#0c8d68' }}
             whileTap={{ scale: 0.95 }}
-            className="w-full py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-green hover:bg-dark-green focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green"
+            className="w-full flex items-center justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-green hover:bg-dark-green focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green"
         >
             {pending && <Loader2 className="animate-spin" />}
-            Submit
+            {t("submit")}
         </motion.button>
     )
 }

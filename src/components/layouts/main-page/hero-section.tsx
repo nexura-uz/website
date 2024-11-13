@@ -6,8 +6,10 @@ import { motion } from 'framer-motion'
 import { Button } from "@/components/ui/button"
 import useThemeStore from '@/stores/theme-store'
 import { Link } from '@/i18n/routing'
+import { useTranslations } from 'next-intl'
 
 export default function HeroSection() {
+  const t = useTranslations("HeroSection")
   const [isVisible, setIsVisible] = useState(false)
   const { isDarkMode } = useThemeStore();
 
@@ -47,18 +49,18 @@ export default function HeroSection() {
             transition={{ duration: 0.8, delay: 0.2 }}
           >
             <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-4">
-              Empowering Digital Experiences with Frontend Excellence
+              {t("title")}
             </h1>
             <p className="text-xl text-gray-600 dark:text-gray-400 mb-8">
-              Web and mobile solutions tailored to elevate your brand
+              {t("text")}
             </p>
             <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
               <Button className="bg-green hover:bg-dark-green text-white px-8 py-3 rounded-md text-lg font-semibold transition-colors duration-300">
-                Get Started
+                {t("get_started")}
               </Button>
               <Link href={"/portfolio"}>
                 <Button variant="outline" className="bg-white text-green border-green hover:bg-green hover:text-white px-8 py-3 rounded-md text-lg font-semibold transition-colors duration-300">
-                  View Our Work
+                  {t("view_our_work")}
                 </Button>
               </Link>
             </div>

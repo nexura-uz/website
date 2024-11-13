@@ -1,12 +1,148 @@
 {
     "Home": {
         "title": "Nexura",
-        "welcome": "xush kelibsiz"
+        "welcome": "Xush kelibsiz"
+    },
+    "Commands": {
+        "sent": "Forma muvaffaqiyatli yuborildi!",
+        "env_error": "Server xatosi",
+        "fetch_error": "Aloqa xatosi",
+        "type_error": "Noto‘g‘ri ma‘lumotlar",
+        "catch_error": "Nimadir xato ketdi"
     },
     "Menus": {
         "about-us": "Biz haqimizda",
-        "portfolio": "Porfolio",
+        "portfolio": "Portfolio",
         "blog": "Blog",
         "contact-us": "Kontaktlar"
+    },
+    "Navbar": {
+        "call_us": "Bizga qo'ng'iroq qiling"
+    },
+    "Footer": {
+        "sub_title": "Raqamli tajribalarni rivojlantirish",
+        "address": "123 Tex Street, Raqamli shahar, 12345",
+        "phone": "Telefon",
+        "links": "Tezkor havolalar",
+        "connect_with_us": "Biz bilan bog'laning",
+        "stay_updated": "Yangiliklardan xabardor bo'ling",
+        "subscribe": "Obuna bo'lish",
+        "all_rights": "Barcha huquqlar himoyalangan.",
+        "privacy_policy": "Maxfiylik siyosati",
+        "terms": "Xizmat shartlari"
+    },
+    "HeroSection": {
+        "title": "Frontend yetukligi bilan raqamli tajribalarni rivojlantirish",
+        "text": "Brendingizni kuchaytirish uchun tayyorlangan veb va mobil yechimlar",
+        "get_started": "Boshlash",
+        "view_our_work": "Ishlarimizni ko'rish"
+    },
+    "AboutSection": {
+        "title": "Nexura haqida",
+        "text": "Nexura mijozlarning o'ziga xos ehtiyojlariga moslashtirilgan veb-saytlar, mobil ilovalar va raqamli yechimlarni yaratishga ixtisoslashgan. Biz g'oyalarni kuchli raqamli tajribalarga aylantiramiz.",
+        "motto": "Innovatsion yechimlar. Barqaror ta'sir.",
+        "card_title_1": "Mijozga yo'naltirilgan yondashuv",
+        "card_description_1": "Haqiqiy biznes ehtiyojlarini qondiruvchi yechimlar.",
+        "card_title_2": "Frontend bo'yicha mutaxassislik",
+        "card_description_2": "Zamonaviy frontend freymvorklari va moslashuvchan dizayndagi mahorat.",
+        "card_title_3": "Innovatsiya va sifat",
+        "card_description_3": "Samarali va kengaytiriladigan mahsulotlar yaratish uchun yangi texnologiyalarni qo'llash.",
+        "card_title_4": "O'sishga intilish",
+        "card_description_4": "Mijozlarga raqamli maydonda rivojlanishda yordam berish.",
+        "learn_more": "Biz haqimizda ko'proq bilib oling"
+    },
+    "ServicesSection": {
+        "title": "Bizning xizmatlarimiz",
+        "card_title_1": "Veb-sayt ishlab chiqish",
+        "card_description_1": "Ishlash va foydalanuvchi tajribasi uchun optimallashtirilgan maxsus saytlar.",
+        "card_title_2": "Mobil ilovalar ishlab chiqish",
+        "card_description_2": "iOS va Android foydalanuvchilari uchun krossplatformali ilovalar.",
+        "card_title_3": "UI/UX dizayni",
+        "card_description_3": "Foydalanuvchi tajribasini oshiruvchi dizayn.",
+        "card_title_4": "Elektron tijorat yechimlari",
+        "card_description_4": "Xavfsiz to'lov tizimlari bilan kengaytiriladigan onlayn do'konlar.",
+        "card_title_5": "Bulut yechimlari",
+        "card_description_5": "Masshtablanuvchi va xavfsiz ilovalar uchun ishonchli bulut infratuzilmasi.",
+        "card_title_6": "Raqamli marketing",
+        "card_description_6": "Sizning onlayn ishtirokingizni va yetib borishingizni kuchaytiradigan strategik kampaniyalar."
+    },
+    "PortfolioSection": {
+        "title": "Bizning portfelimiz",
+        "view_all_projects": "Barcha loyihalarni ko'rish"
+    },
+    "WhyChooseUsSection": {
+        "title": "Nega bizni tanlaysiz",
+        "card_title_1": "Tajribali jamoa",
+        "card_description_1": "Bizning malakali dasturchilar har bir loyihaga ishtiyoq va tajriba olib keladi, front-end sohasida yuqori sifatni ta'minlaydi.",
+        "card_title_2": "Mijozga yo'naltirilganlik",
+        "card_description_2": "Biz har bir loyihani sizning ehtiyojlaringizga moslashtiramiz va sizning g'oyalaringizni haqiqatga aylantiramiz.",
+        "card_title_3": "Innovatsion yechimlar",
+        "card_description_3": "Biz biznesingiz uchun kengaytiriladigan, yuqori samarali yechimlar yaratish uchun yangi texnologiyalarni qo'llaymiz.",
+        "card_title_4": "Sifat va ishonchlilik",
+        "card_description_4": "Har bir detalga diqqat bilan qarab, o'z vaqtida sifatli natijalarni taqdim etishga intilamiz."
+    },
+    "BlogHighlightsSection": {
+        "title": "So'nggi yangiliklar",
+        "read_our_blog": "Blogimizni o'qing"
+    },
+    "ContactUsPage": {
+        "title": "Nexura bilan bog'laning",
+        "sub_title": "Biz sizga barcha texnologik yechimlaringizda yordam berishga tayyormiz",
+        "contact_info": "Aloqa ma'lumotlari",
+        "send_us_message": "Bizga xabar yuboring",
+        "full_name": "To'liq ism",
+        "submit": "Yuborish"
+    },
+    "BlogPage": {
+        "title": "Nexura Texnologiya Blogi",
+        "sub_title": "Texnologiyalar olamidagi so‘nggi trendlar, yangiliklar va innovatsiyalarni kuzatib boring."
+    },
+    "PortfolioPage": {
+        "title": "Nexura bilan Kelajakni Yaratamiz",
+        "sub_title": "Biz biznes o‘sishini qo‘llab-quvvatlaydigan va sanoatlarni o‘zgartiradigan ilg‘or texnologik yechimlarni yaratamiz.",
+        "get_in_touch": "Biz bilan bog‘laning"
+    },
+    "AboutPageHero": {
+        "title": "Nexura haqida",
+        "sub_title": "Bog‘langan kelajak uchun innovatsiyalar",
+        "text": "Nexurada biz murakkab muammolarni hal qilish va raqamli o‘zgarishlarni amalga oshirish uchun ilg‘or texnologiyalardan foydalanishga intilamiz."
+    },
+    "AboutPageStory": {
+        "title": "Bizning Hikoyamiz"
+    },
+    "AboutPage2Card": {
+        "card_title_1": "Bizning Missiyamiz",
+        "card_description_1": "Biznesni o‘sish, samaradorlik va raqamli asrda raqobat ustunligi bilan ta’minlaydigan innovatsion texnologik yechimlar bilan kuchaytirish.",
+        "card_title_2": "Bizning Maqsadimiz",
+        "card_description_2": "Sanoatlarning kelajagini shakllantiruvchi va butun dunyoda hayot sifatini yaxshilaydigan texnologik yechimlarni yetkazib beruvchi global yetakchiga aylanish."
+    },
+    "AboutPageValues": {
+        "title": "Bizning Asosiy Qadriyatlarimiz",
+        "card_title_1": "Innovatsiya",
+        "card_description_1": "Texnologiyalarda yangi ufqlarni zabt etish",
+        "card_title_2": "Mijozlarga E'tibor",
+        "card_description_2": "Biz qilayotgan barcha ishlarimizning markazida mijozlarimiz turadi",
+        "card_title_3": "Sifat",
+        "card_description_3": "Har bir loyihada yuqori sifatni ta’minlash",
+        "card_title_4": "Halollik",
+        "card_description_4": "Eng yuqori axloqiy standartlarga rioya qilish"
+    },
+    "AboutPageTeam": {
+        "title": "Jamoamiz bilan tanishing",
+        "member_text_1": "Texnologik innovatsiyalar sohasida 15+ yillik tajribaga ega yetakchi",
+        "member_text_2": "Bizning ilg‘or yechimlarimizni yaratuvchi texnologiya eksperti",
+        "member_text_3": "Loyihalar muvaffaqiyatli bajarilishini ta'minlaydigan operatsiyalar mutaxassisi",
+        "member_text_4": "Foydalanuvchiga yo‘naltirilgan dizaynlarimiz ortidagi ijodiy aql"
+    },
+    "AboutPagePartners": {
+        "title": "Hamkorlarimiz"
+    },
+    "AboutPageClients": {
+        "title": "Mijozlarimiz nima deydi"
+    },
+    "AboutPageContact": {
+        "title": "Nexura bilan innovatsiyaga tayyormisiz?",
+        "text": "Keling, biznesingizni ilg‘or yechimlarimiz bilan qanday o‘zgartira olishimiz haqida gaplashamiz.",
+        "contact_us": "Biz bilan bog‘laning"
     }
 }

@@ -1,10 +1,38 @@
+"use client"
+
 import { Code, Users, Lightbulb, CheckCircle } from "lucide-react"
+import { useTranslations } from "next-intl"
 
 export default function WhyChooseUsSection() {
+  const t = useTranslations("WhyChooseUsSection")
+
+  const strengths = [
+    {
+      title: t("card_title_1"),
+      description: t("card_description_1"),
+      icon: Users,
+    },
+    {
+      title: t("card_title_2"),
+      description: t("card_description_2"),
+      icon: CheckCircle,
+    },
+    {
+      title: t("card_title_3"),
+      description: t("card_description_3"),
+      icon: Lightbulb,
+    },
+    {
+      title: t("card_title_4"),
+      description: t("card_description_4"),
+      icon: Code,
+    },
+  ]
+
   return (
     <section className="py-16 bg-gray-50 dark:bg-gray-900 text-primary border-t border-green/30">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center mb-12">Why Choose Us</h2>
+        <h2 className="text-3xl font-bold text-center mb-12">{t("title")}</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {strengths.map((strength, index) => (
             <div key={index} className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md shadow-green/30 transition-all duration-300 hover:shadow-lg hover:shadow-green/40 cursor-pointer">
@@ -21,25 +49,3 @@ export default function WhyChooseUsSection() {
   )
 }
 
-const strengths = [
-  {
-    title: "Experienced Team",
-    description: "Our skilled developers bring passion and expertise to every project, ensuring frontend excellence.",
-    icon: Users,
-  },
-  {
-    title: "Client-Focused",
-    description: "We tailor every project to meet your specific needs, ensuring your vision becomes reality.",
-    icon: CheckCircle,
-  },
-  {
-    title: "Innovative Solutions",
-    description: "We leverage the latest technologies to create scalable, high-performance solutions for your business.",
-    icon: Lightbulb,
-  },
-  {
-    title: "Quality and Reliability",
-    description: "Our dedication to delivering on time with meticulous attention to detail sets us apart.",
-    icon: Code,
-  },
-]

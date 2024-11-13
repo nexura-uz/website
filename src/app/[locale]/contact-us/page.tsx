@@ -3,8 +3,11 @@
 import { motion } from 'framer-motion'
 import { Mail, Phone, MapPin } from 'lucide-react'
 import { ContactForm } from "./form";
+import { useTranslations } from 'next-intl';
 
 export default function Page() {
+    const t = useTranslations("ContactUsPage")
+
     return (
         <div className="min-h-screen bg-gray-50 dark:bg-gray-900 text-primary">
             <motion.section
@@ -18,7 +21,7 @@ export default function Page() {
                     whileHover={{ scale: 1.05 }}
                     transition={{ type: 'spring', stiffness: 300 }}
                 >
-                    Get in Touch with Nexura
+                    {t("title")}
                 </motion.h1>
                 <motion.p
                     className="text-xl text-gray-600 dark:text-gray-400"
@@ -26,7 +29,7 @@ export default function Page() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.2, duration: 0.5 }}
                 >
-                    {"We're"} here to help you with all your tech solution needs
+                    {t("sub_title")}
                 </motion.p>
             </motion.section>
 
@@ -39,7 +42,7 @@ export default function Page() {
                         transition={{ duration: 0.5 }}
                         className='col-span-2'
                     >
-                        <h2 className="text-2xl font-semibold mb-6 text-primary">Contact Information</h2>
+                        <h2 className="text-2xl font-semibold mb-6 text-primary">{t("contact_info")}</h2>
                         {[
                             { icon: Mail, text: 'contact@nexura.com' },
                             { icon: Phone, text: '+1 (555) 123-4567' },
@@ -63,7 +66,6 @@ export default function Page() {
                         ))}
 
                         <motion.iframe
-                            src=''
                             loading='lazy'
                             height={"350"}
                             className='w-full mt-5 rounded-xl'
@@ -79,7 +81,7 @@ export default function Page() {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.5 }}
                     >
-                        <h2 className="text-2xl font-semibold mb-6 text-primary">Send us a Message</h2>
+                        <h2 className="text-2xl font-semibold mb-6 text-primary">{t("send_us_message")}</h2>
                         <ContactForm />
                     </motion.div>
                 </div>

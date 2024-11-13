@@ -21,6 +21,8 @@ const initialState = {
 export default function Footer() {
   const [state, formAction] = useActionState(newspaperFormSubmit, initialState)
   const t = useTranslations("Menus")
+  const t_f = useTranslations("Footer")
+  const commands = useTranslations("Commands")
 
   return (
     <footer className="bg-gray-900 text-gray-300 border-t border-green/30">
@@ -32,17 +34,17 @@ export default function Footer() {
               <Image src={"/logo.svg"} width={40} height={40} alt={""} />
               <h2 className="text-2xl font-bold text-white font-havelock">Nexura</h2>
             </div>
-            <p className="text-sm">Empowering Digital Experiences</p>
+            <p className="text-sm">{t_f("sub_title")}</p>
             <address className="text-sm not-italic">
-              123 Tech Street, Digital City, 12345
+              {t_f("address")}
             </address>
             <p className="text-sm">Email: info@nexura.com</p>
-            <p className="text-sm">Phone: (123) 456-7890</p>
+            <p className="text-sm">{t_f("phone")}: (123) 456-7890</p>
           </div>
 
           {/* Navigation Links */}
           <div>
-            <h3 className="text-lg font-semibold text-white mb-4">Quick Links</h3>
+            <h3 className="text-lg font-semibold text-white mb-4">{t_f("links")}</h3>
             <ul className="space-y-2">
               {menus.map((item) => (
                 <li key={item}>
@@ -56,7 +58,7 @@ export default function Footer() {
 
           {/* Social Media Links */}
           <div>
-            <h3 className="text-lg font-semibold text-white mb-4">Connect With Us</h3>
+            <h3 className="text-lg font-semibold text-white mb-4">{t_f("connect_with_us")}</h3>
             <div className="flex space-x-4">
               <Link href="#" target="_blank" className="hover:text-green transition-colors">
                 <Instagram className="w-6 h-6" />
@@ -79,12 +81,12 @@ export default function Footer() {
 
           {/* Newsletter Signup */}
           <div>
-            <h3 className="text-lg font-semibold text-white mb-4">Stay Updated</h3>
+            <h3 className="text-lg font-semibold text-white mb-4">{t_f("stay_updated")}</h3>
             <form className="space-y-2" action={formAction}>
               <Input
                 name="email"
                 type="email"
-                placeholder="Enter your email"
+                placeholder="Email"
                 className="bg-gray-800 border-gray-700 text-white placeholder-gray-400"
                 required
               />
@@ -95,7 +97,7 @@ export default function Footer() {
                   animate={{ opacity: 1, y: 0 }}
                   className={clsx("mt-4", state?.success ? "text-green-600" : "text-red-600")}
                 >
-                  {state?.message}
+                  {commands(`${state?.message}`)}
                 </motion.p>
               ) : ""
               }
@@ -105,13 +107,13 @@ export default function Footer() {
 
         {/* Legal Links */}
         <div className="mt-8 pt-8 border-t border-gray-800 flex flex-col sm:flex-row justify-between items-center">
-          <p className="text-sm">&copy; {new Date().getFullYear()} Nexura. All rights reserved.</p>
+          <p className="text-sm">&copy; {new Date().getFullYear()} Nexura. {t_f("all_rights")}</p>
           <div className="mt-4 sm:mt-0">
             <Link href="/privacy-policy" className="text-sm hover:text-white transition-colors mr-4">
-              Privacy Policy
+              {t_f("privacy_policy")}
             </Link>
             <Link href="/terms-of-service" className="text-sm hover:text-white transition-colors">
-              Terms of Service
+              {t_f("terms")}
             </Link>
           </div>
         </div>
@@ -123,11 +125,12 @@ export default function Footer() {
 
 function SubmitButton() {
   const { pending } = useFormStatus()
+  const t = useTranslations("Footer")
 
   return (
-    <Button type="submit" aria-disabled={pending} disabled={pending} className="w-full bg-green hover:bg-dark-green text-white">
+    <Button type="submit" aria-disabled={pending} disabled={pending} className="w-full bg-green hover:bg-dark-green text-white flex items-center justify-center">
       {pending && <Loader2 className="animate-spin" />}
-      Subscribe
+      {t("subscribe")}
     </Button>
   )
 }

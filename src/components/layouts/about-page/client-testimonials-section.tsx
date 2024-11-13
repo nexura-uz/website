@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion'
 import { ChevronLeft, ChevronRight } from 'lucide-react'
+import { useTranslations } from 'next-intl'
 import { useState } from 'react'
 
 
@@ -12,12 +13,13 @@ const testimonials = [
 ]
 
 export default function ClientTestimonialsSection() {
+    const t = useTranslations("AboutPageClients")
     const [currentTestimonial, setCurrentTestimonial] = useState(0)
 
     return (
         <section className="py-20 bg-gray-100 dark:bg-gray-900 border-t border-green/30">
             <div className="container mx-auto px-4">
-                <h2 className="text-3xl font-bold text-center mb-12">What Our Clients Say</h2>
+                <h2 className="text-3xl font-bold text-center mb-12">{t("title")}</h2>
                 <div className="relative">
                     <motion.div
                         key={currentTestimonial}
