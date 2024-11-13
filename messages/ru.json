@@ -4,9 +4,9 @@
         "welcome": "добро пожаловать"
     },
     "Menus": {
-        "about-us": "About Us",
-        "portfolio": "Porfolio",
-        "blog": "Blog",
-        "contact-us": "Contact Us"
+        "about-us": "О нас",
+        "portfolio": "Портфолио",
+        "blog": "Блог",
+        "contact-us": "Контакты"
     }
 }
