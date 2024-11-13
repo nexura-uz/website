@@ -1,7 +1,1 @@
-export const menus = [
-  "about-us",
-  "services",
-  "portfolio",
-  "blog",
-  "contact-us",
-];
+export const menus = ["about-us", "portfolio", "blog", "contact-us"];

@@ -1,4 +1,4 @@
-import useThemeStore from '@/sores/theme-store';
+import useThemeStore from '@/stores/theme-store';
 import { useEffect } from 'react';
 
 const ThemeSwitcher = () => {

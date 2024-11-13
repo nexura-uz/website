@@ -2,19 +2,16 @@
 
 import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
-import { Instagram, Linkedin, Twitter, Facebook, Terminal, AlertCircle, Loader2 } from 'lucide-react'
+import { Instagram, Linkedin, Twitter, Facebook, Loader2 } from 'lucide-react'
 import Image from 'next/image'
 import { Link } from "@/i18n/routing"
 import { useTranslations } from "next-intl"
 import { menus } from "@/lib/contstants"
 import { useActionState } from "react"
-import {
-  Alert,
-  AlertDescription,
-  AlertTitle,
-} from "@/components/ui/alert"
 import { newspaperFormSubmit } from "@/app/actions/newspaper-actions"
 import { useFormStatus } from "react-dom"
+import { motion } from "framer-motion"
+import clsx from "clsx"
 
 const initialState = {
   message: "",
@@ -61,19 +58,19 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-semibold text-white mb-4">Connect With Us</h3>
             <div className="flex space-x-4">
-              <Link href="#" className="hover:text-green transition-colors">
+              <Link href="#" target="_blank" className="hover:text-green transition-colors">
                 <Instagram className="w-6 h-6" />
                 <span className="sr-only">Instagram</span>
               </Link>
-              <Link href="#" className="hover:text-green transition-colors">
+              <Link href="#" target="_blank" className="hover:text-green transition-colors">
                 <Linkedin className="w-6 h-6" />
                 <span className="sr-only">LinkedIn</span>
               </Link>
-              <Link href="#" className="hover:text-green transition-colors">
+              <Link href="#" target="_blank" className="hover:text-green transition-colors">
                 <Twitter className="w-6 h-6" />
                 <span className="sr-only">Twitter</span>
               </Link>
-              <Link href="#" className="hover:text-green transition-colors">
+              <Link href="#" target="_blank" className="hover:text-green transition-colors">
                 <Facebook className="w-6 h-6" />
                 <span className="sr-only">Facebook</span>
               </Link>
@@ -93,22 +90,13 @@ export default function Footer() {
               />
               <SubmitButton />
               {state?.message ? (
-                state?.success ?
-                  <Alert>
-                    <Terminal className="h-4 w-4" />
-                    <AlertTitle>Heads up!</AlertTitle>
-                    <AlertDescription>
-                      {state?.message}
-                    </AlertDescription>
-                  </Alert>
-                  :
-                  <Alert variant="destructive">
-                    <AlertCircle className="h-4 w-4" />
-                    <AlertTitle>Error</AlertTitle>
-                    <AlertDescription>
-                      {state?.message}
-                    </AlertDescription>
-                  </Alert>
+                <motion.p
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  className={clsx("mt-4", state?.success ? "text-green-600" : "text-red-600")}
+                >
+                  {state?.message}
+                </motion.p>
               ) : ""
               }
             </form>

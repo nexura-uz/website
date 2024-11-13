@@ -4,7 +4,8 @@ import { useState, useEffect } from 'react'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
 import { Button } from "@/components/ui/button"
-import useThemeStore from '@/sores/theme-store'
+import useThemeStore from '@/stores/theme-store'
+import { Link } from '@/i18n/routing'
 
 export default function HeroSection() {
   const [isVisible, setIsVisible] = useState(false)
@@ -15,7 +16,7 @@ export default function HeroSection() {
   }, [])
 
   return (
-    <section className="relative overflow-hidden text-primary">
+    <section className="relative overflow-hidden text-primary pt-10">
       {/* Abstract background shapes */}
       <div className="absolute inset-0 z-0">
         <svg className="absolute left-0 top-0 h-full w-full" viewBox="0 0 100 100" preserveAspectRatio="none">
@@ -55,9 +56,11 @@ export default function HeroSection() {
               <Button className="bg-green hover:bg-dark-green text-white px-8 py-3 rounded-md text-lg font-semibold transition-colors duration-300">
                 Get Started
               </Button>
-              <Button variant="outline" className="bg-white text-green border-green hover:bg-green hover:text-white px-8 py-3 rounded-md text-lg font-semibold transition-colors duration-300">
-                View Our Work
-              </Button>
+              <Link href={"/portfolio"}>
+                <Button variant="outline" className="bg-white text-green border-green hover:bg-green hover:text-white px-8 py-3 rounded-md text-lg font-semibold transition-colors duration-300">
+                  View Our Work
+                </Button>
+              </Link>
             </div>
           </motion.div>
 
