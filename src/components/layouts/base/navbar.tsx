@@ -84,7 +84,7 @@ function VerticalMenu() {
                 </div>
 
                 <div className="text-primary text-lg w-full">
-                    <Link target="_blank" href={"tel:+998939756883"} className="text-2xl pb-5 block">+998 (93) 975 68 83</Link>
+                    <Link target="_blank" href={"tel:+998939756883"} className="text-2xl pb-5 block">+998 (99) 999 99 99</Link>
 
                     <div className="cursor-pointer select-none bg-green hover:bg-dark-green px-5 py-3 text-center rounded-xl text-white">
                         Call to us
