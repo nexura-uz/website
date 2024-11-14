@@ -35,7 +35,7 @@ export default function PortfolioSection() {
                 className={`absolute inset-0 bg-green bg-opacity-90 flex flex-col justify-center items-center p-6 transition-all duration-300 ease-in-out ${hoveredProject === index ? 'opacity-100' : 'opacity-0'
                   }`}
               >
-                <Link href={""} target='_blank' className="text-white text-xl font-semibold mb-2">{t(`${project.title}`)}</Link>
+                <Link href={project.link} target='_blank' className="text-white text-xl font-semibold mb-2">{t(`${project.title}`)}</Link>
                 <p className="text-white text-center">{t(`${project.description}`)}</p>
               </div>
             </div>
