@@ -6,6 +6,7 @@ import { ArrowRight } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Link } from '@/i18n/routing'
 import { useTranslations } from 'next-intl'
+import portfolios from '../../../portfolios'
 
 export default function PortfolioSection() {
   const t = useTranslations("PortfolioSection")
@@ -16,7 +17,7 @@ export default function PortfolioSection() {
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold text-center mb-12">{t("title")}</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-          {projects.map((project, index) => (
+          {portfolios.map((project, index) => (
             <div
               key={index}
               className="relative overflow-hidden rounded-xl shadow-lg shadow-green/30 transition-all duration-300 ease-in-out cursor-pointer"
@@ -25,7 +26,7 @@ export default function PortfolioSection() {
             >
               <Image
                 src={project.image}
-                alt={project.title}
+                alt={t(`${project.title}`)}
                 width={400}
                 height={300}
                 className="w-full h-64 object-cover"
@@ -34,8 +35,8 @@ export default function PortfolioSection() {
                 className={`absolute inset-0 bg-green bg-opacity-90 flex flex-col justify-center items-center p-6 transition-all duration-300 ease-in-out ${hoveredProject === index ? 'opacity-100' : 'opacity-0'
                   }`}
               >
-                <h3 className="text-white text-xl font-semibold mb-2">{project.title}</h3>
-                <p className="text-white text-center">{project.description}</p>
+                <Link href={""} target='_blank' className="text-white text-xl font-semibold mb-2">{t(`${project.title}`)}</Link>
+                <p className="text-white text-center">{t(`${project.description}`)}</p>
               </div>
             </div>
           ))}
@@ -56,30 +57,3 @@ export default function PortfolioSection() {
   )
 }
 
-const projects = [
-  {
-    title: "E-commerce Platform",
-    description: "Created a fully responsive e-commerce platform to drive online sales for a leading fashion retailer.",
-    image: "/placeholder.svg?height=300&width=400",
-  },
-  {
-    title: "Health & Fitness App",
-    description: "Developed a cross-platform mobile app for personalized workout and nutrition tracking.",
-    image: "/placeholder.svg?height=300&width=400",
-  },
-  {
-    title: "Financial Dashboard",
-    description: "Designed and built a real-time financial dashboard for a fintech startup, integrating multiple data sources.",
-    image: "/placeholder.svg?height=300&width=400",
-  },
-  {
-    title: "Educational Learning Platform",
-    description: "Created an interactive online learning platform with video courses, quizzes, and progress tracking.",
-    image: "/placeholder.svg?height=300&width=400",
-  },
-  {
-    title: "Smart Home IoT Interface",
-    description: "Developed a user-friendly interface for controlling and monitoring smart home devices.",
-    image: "/placeholder.svg?height=300&width=400",
-  },
-]

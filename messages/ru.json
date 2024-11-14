@@ -68,7 +68,9 @@
     },
     "PortfolioSection": {
         "title": "Наше портфолио",
-        "view_all_projects": "Просмотреть все проекты"
+        "view_all_projects": "Просмотреть все проекты",
+        "midea_title": "Midea",
+        "midea_description": "Современная платформа электронной коммерции, которую мы разработали для демонстрации высококачественной кухонной техники Midea."
     },
     "WhyChooseUsSection": {
         "title": "Почему выбирают нас",

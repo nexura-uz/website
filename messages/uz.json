@@ -68,7 +68,9 @@
     },
     "PortfolioSection": {
         "title": "Bizning loyihalar",
-        "view_all_projects": "Barcha loyihalarni ko'rish"
+        "view_all_projects": "Barcha loyihalarni ko'rish",
+        "midea_title": "Midea",
+        "midea_description": "Midea kompaniyasining yuqori darajadagi oshxona jihozlarini namoyish qilish uchun biz ishlab chiqqan zamonaviy elektron tijorat platformasi"
     },
     "WhyChooseUsSection": {
         "title": "Nega bizni tanlashadi",

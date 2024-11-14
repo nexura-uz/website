@@ -68,7 +68,9 @@
     },
     "PortfolioSection": {
         "title": "Our Portfolio",
-        "view_all_projects": "View All Projects"
+        "view_all_projects": "View All Projects",
+        "midea_title": "Midea",
+        "midea_description": "Modern e-commerce platform that we developed to showcase Midea's premium kitchen appliances"
     },
     "WhyChooseUsSection": {
         "title": "Why Choose Us",
