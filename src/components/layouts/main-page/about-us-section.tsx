@@ -70,7 +70,7 @@ export default function AboutUsSection() {
           ))}
         </div>
 
-        <div className="mb-12">
+        {/* <div className="mb-12">
           <Image
             src="/placeholder.svg?height=400&width=800"
             alt="Nexura Team"
@@ -78,7 +78,7 @@ export default function AboutUsSection() {
             height={400}
             className="w-full h-auto rounded-xl shadow-lg shadow-green/30"
           />
-        </div>
+        </div> */}
 
         <div className="text-center">
           <Link

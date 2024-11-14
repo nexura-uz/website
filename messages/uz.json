@@ -85,7 +85,13 @@
     },
     "BlogHighlightsSection": {
         "title": "So'nggi yangiliklar",
-        "read_our_blog": "Blogimizni o'qing"
+        "read_our_blog": "Blogimizni o'qing",
+        "blog_title_1": "2024 yil uchun eng yaxshi UI trendlar",
+        "blog_description_1": "2024 yilda raqamli olamni shakllantirayotgan ilg‘or UI dizayn trendlarini kashf eting.",
+        "blog_title_2": "Mobil uchun qulay dizayn bo‘yicha 10 maslahat",
+        "blog_description_2": "Mobil qurilmalar uchun mukammal tajribalar yaratish uchun zaruriy dizayn maslahatlari bilan tanishing.",
+        "blog_title_3": "Frontend freymvorklarining kelajagi",
+        "blog_description_3": "Frontend freymvorklar olamiga sho‘ng‘ing va veb-ishlanmaning kelajagi nimadan iborat ekanligini bilib oling."
     },
     "ContactUsPage": {
         "title": "Nexura bilan bog'laning",

@@ -85,7 +85,13 @@
     },
     "BlogHighlightsSection": {
         "title": "Latest Insights",
-        "read_our_blog": "Read Our Blog"
+        "read_our_blog": "Read Our Blog",
+        "blog_title_1": "Top UI Trends for 2024",
+        "blog_description_1": "Explore the cutting-edge UI design trends that are shaping the digital landscape in 2024.",
+        "blog_title_2": "10 Tips for Mobile-Friendly Design",
+        "blog_description_2": "Learn how to create seamless mobile experiences with these essential design tips.",
+        "blog_title_3": "The Future of Frontend Frameworks",
+        "blog_description_3": "Dive into the evolving world of frontend frameworks and what's next for web development."
     },
     "ContactUsPage": {
         "title": "Get in Touch with Nexura",

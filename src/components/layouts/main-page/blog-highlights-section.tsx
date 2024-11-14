@@ -6,6 +6,28 @@ import { useTranslations } from 'next-intl'
 
 export default function BlogHighlightsSection() {
   const t = useTranslations("BlogHighlightsSection")
+
+  const blogPosts = [
+    {
+      title: t("blog_title_1"),
+      description: t("blog_description_1"),
+      image: "/images/blogs/trends-2024.png",
+      link: "/blog/top-ui-trends-2024",
+    },
+    {
+      title: t("blog_title_2"),
+      description: t("blog_description_2"),
+      image: "/images/blogs/mobile-design-tips.png",
+      link: "/blog/mobile-friendly-design-tips",
+    },
+    {
+      title: t("blog_title_3"),
+      description: t("blog_description_3"),
+      image: "/images/blogs/future-of-web.png",
+      link: "/blog/future-of-frontend-frameworks",
+    },
+  ]
+
   return (
     <section className="py-16 bg-white dark:bg-gray-900 text-primary border-t border-green/30">
       <div className="container mx-auto px-4">
@@ -50,23 +72,3 @@ export default function BlogHighlightsSection() {
   )
 }
 
-const blogPosts = [
-  {
-    title: "Top UI Trends for 2024",
-    description: "Explore the cutting-edge UI design trends that are shaping the digital landscape in 2024.",
-    image: "/placeholder.svg?height=200&width=400",
-    link: "/blog/top-ui-trends-2024",
-  },
-  {
-    title: "10 Tips for Mobile-Friendly Design",
-    description: "Learn how to create seamless mobile experiences with these essential design tips.",
-    image: "/placeholder.svg?height=200&width=400",
-    link: "/blog/mobile-friendly-design-tips",
-  },
-  {
-    title: "The Future of Frontend Frameworks",
-    description: "Dive into the evolving world of frontend frameworks and what's next for web development.",
-    image: "/placeholder.svg?height=200&width=400",
-    link: "/blog/future-of-frontend-frameworks",
-  },
-]
