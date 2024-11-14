@@ -60,19 +60,19 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-semibold text-white mb-4">{t_f("connect_with_us")}</h3>
             <div className="flex space-x-4">
-              <Link href="#" target="_blank" className="hover:text-green transition-colors">
+              <Link href="https://www.instagram.com/nexura.uz/" target="_blank" className="hover:text-green transition-colors">
                 <Instagram className="w-6 h-6" />
                 <span className="sr-only">Instagram</span>
               </Link>
-              <Link href="#" target="_blank" className="hover:text-green transition-colors">
+              <Link href="https://www.linkedin.com/company/nexura-uz/" target="_blank" className="hover:text-green transition-colors">
                 <Linkedin className="w-6 h-6" />
                 <span className="sr-only">LinkedIn</span>
               </Link>
-              <Link href="#" target="_blank" className="hover:text-green transition-colors">
+              <Link href="https://x.com/nexura_uz" target="_blank" className="hover:text-green transition-colors">
                 <Twitter className="w-6 h-6" />
                 <span className="sr-only">Twitter</span>
               </Link>
-              <Link href="#" target="_blank" className="hover:text-green transition-colors">
+              <Link href="https://www.facebook.com/profile.php?id=61568249653402" target="_blank" className="hover:text-green transition-colors">
                 <Facebook className="w-6 h-6" />
                 <span className="sr-only">Facebook</span>
               </Link>
