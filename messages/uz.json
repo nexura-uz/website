@@ -32,10 +32,10 @@
         "terms": "Xizmat shartlari"
     },
     "HeroSection": {
-        "title": "Frontend yetukligi bilan raqamli tajribalarni rivojlantirish",
+        "title": "Kelajak ilovalarini bugun yaratish",
         "text": "Brendingizni kuchaytirish uchun tayyorlangan veb va mobil yechimlar",
         "get_started": "Boshlash",
-        "view_our_work": "Ishlarimizni ko'rish"
+        "view_our_work": "Bizning loyihalar"
     },
     "AboutSection": {
         "title": "Nexura haqida",
@@ -52,7 +52,7 @@
         "learn_more": "Biz haqimizda ko'proq bilib oling"
     },
     "ServicesSection": {
-        "title": "Bizning xizmatlarimiz",
+        "title": "Bizning xizmatlar",
         "card_title_1": "Veb-sayt ishlab chiqish",
         "card_description_1": "Ishlash va foydalanuvchi tajribasi uchun optimallashtirilgan maxsus saytlar.",
         "card_title_2": "Mobil ilovalar ishlab chiqish",
@@ -64,14 +64,14 @@
         "card_title_5": "Bulut yechimlari",
         "card_description_5": "Masshtablanuvchi va xavfsiz ilovalar uchun ishonchli bulut infratuzilmasi.",
         "card_title_6": "Raqamli marketing",
-        "card_description_6": "Sizning onlayn ishtirokingizni va yetib borishingizni kuchaytiradigan strategik kampaniyalar."
+        "card_description_6": "Sizning onlayn ishtirokingizni va yetib borishingizni kuchaytiradigan strategik yechimlar."
     },
     "PortfolioSection": {
-        "title": "Bizning portfelimiz",
+        "title": "Bizning loyihalar",
         "view_all_projects": "Barcha loyihalarni ko'rish"
     },
     "WhyChooseUsSection": {
-        "title": "Nega bizni tanlaysiz",
+        "title": "Nega bizni tanlashadi",
         "card_title_1": "Tajribali jamoa",
         "card_description_1": "Bizning malakali dasturchilar har bir loyihaga ishtiyoq va tajriba olib keladi, front-end sohasida yuqori sifatni ta'minlaydi.",
         "card_title_2": "Mijozga yo'naltirilganlik",
