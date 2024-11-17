@@ -20,7 +20,6 @@ export default function PhoneNumberInput() {
       inputProps={{
         name: "phoneNumber",
         required: true,
-        autoFocus: true,
       }}
       inputClass="!bg-background !text-primary !w-full"
       containerClass=""
