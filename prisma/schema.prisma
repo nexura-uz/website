@@ -14,11 +14,30 @@ datasource db {
 }
 
 model User {
-  id            String    @id @default(cuid())
-  name          String?
-  email         String    @unique
-  password      String
-  role          String    @default("admin")
-  createdAt     DateTime  @default(now())
-  updatedAt     DateTime  @updatedAt
+  id        String   @id @default(cuid())
+  name      String?
+  email     String   @unique
+  password  String
+  role      String   @default("admin")
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@map("users")
+}
+
+model Post {
+  id         String   @id @default(cuid())
+  title_uz   String
+  title_ru   String
+  title_en   String
+  slug       String   @unique
+  content_uz String   @db.Text
+  content_ru String   @db.Text
+  content_en String   @db.Text
+  image      String
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+  viewsCount Int      @default(0)
+
+  @@map("posts")
 }

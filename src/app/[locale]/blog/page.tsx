@@ -1,27 +1,47 @@
-"use client"
+import { getPostListAction } from "@/app/actions/posts";
+import BlogHeroSection from "@/components/layouts/blog-page/hero-section";
 
-import { motion } from "framer-motion";
-import { useTranslations } from "next-intl";
+export default async function Page({ params }: { params: Promise<any> }) {
+  const locale = (await params).locale;
+  const posts = await getPostListAction();
 
-export default function Page() {
-    const t = useTranslations("BlogPage")
-    return (
-        <div className="min-h-screen bg-gray-50 dark:bg-gray-900 text-primary">
+  return (
+    <div className="min-h-screen bg-gray-50 dark:bg-gray-900 text-primary">
+      <BlogHeroSection />
+        {locale}
+      {JSON.stringify(posts, null, 2)}
 
-            {/* Hero Section */}
-            <motion.section
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8 }}
-                className="bg-background text-primary pt-36 pb-20"
-            >
-                <div className="container mx-auto px-4 text-center">
-                    <h1 className="text-4xl md:text-5xl font-bold mb-4">{t("title")}</h1>
-                    <p className="text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-                        {t("sub_title")}
-                    </p>
-                </div>
-            </motion.section>
-        </div>
-    )
+      {/* <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+        {blogPosts.map((post, index) => (
+          <div
+            key={index}
+            className="bg-white dark:bg-gray-800 rounded-xl shadow-md shadow-green/30 transition-all duration-300 hover:shadow-lg hover:shadow-green/40 overflow-hidden"
+          >
+            <Image
+              src={post.image}
+              alt={post.title}
+              width={400}
+              height={200}
+              className="w-full h-48 object-cover"
+            />
+            <div className="p-6">
+              <h3 className="text-xl font-semibold mb-2 text-green">
+                {post.title}
+              </h3>
+              <p className="text-gray-600 dark:text-gray-400 mb-4">
+                {post.description}
+              </p>
+              <Link
+                href={post.link}
+                className="text-green font-medium hover:underline inline-flex items-center"
+              >
+                Read More
+                <ArrowRight className="ml-2 h-4 w-4" />
+              </Link>
+            </div>
+          </div>
+        ))}
+      </div> */}
+    </div>
+  );
 }
