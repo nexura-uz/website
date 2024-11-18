@@ -12,7 +12,7 @@ export default function BlogHeroSection() {
       transition={{ duration: 0.8 }}
       className="bg-background text-primary pt-36 pb-20"
     >
-      <div className="container mx-auto px-4 text-center">
+      <div className="max-w-7xl container mx-auto px-4 text-center">
         <h1 className="text-4xl md:text-5xl font-bold mb-4">{t("title")}</h1>
         <p className="text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
           {t("sub_title")}

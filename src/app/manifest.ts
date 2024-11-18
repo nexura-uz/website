@@ -37,12 +37,12 @@ export default function manifest(): MetadataRoute.Manifest {
     shortcuts: [
       {
         name: "Portfolio",
-        url: "/portfolio",
+        url: "/uz/portfolio",
         description: "View our work portfolio",
       },
       {
         name: "Contact",
-        url: "/contact-us",
+        url: "/uz/contact-us",
         description: "Get in touch with us",
       },
     ],

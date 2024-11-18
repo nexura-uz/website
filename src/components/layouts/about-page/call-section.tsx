@@ -9,7 +9,7 @@ export default function AboutCallSection() {
 
     return (
         <section className="py-20 bg-green text-white">
-            <div className="container mx-auto px-4 text-center">
+            <div className="max-w-7xl  mx-auto px-4 text-center">
                 <h2 className="text-3xl font-bold mb-4">{t("title")}</h2>
                 <p className="mb-8 text-lg">{t("text")}</p>
                 <Link href={"/contact-us"}>

@@ -16,7 +16,7 @@ export default function AboutOurStorySection() {
 
     return (
         <section className="py-20 bg-background border-t border-green/30">
-            <div className="container mx-auto px-4">
+            <div className="max-w-7xl container mx-auto px-4">
                 <h2 className="text-3xl font-bold text-center mb-12">{t("title")}</h2>
                 <div className="space-y-12">
                     {milestones.map((milestone, index) => (

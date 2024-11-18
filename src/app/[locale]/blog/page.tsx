@@ -1,47 +1,38 @@
 import { getPostListAction } from "@/app/actions/posts";
+import BlogCard from "@/components/custom-ui/blog-card";
 import BlogHeroSection from "@/components/layouts/blog-page/hero-section";
+import { Link } from "@/i18n/routing";
+import { getSession } from "@/lib/auth";
+import { PlusIcon, UserIcon } from "lucide-react";
 
 export default async function Page({ params }: { params: Promise<any> }) {
   const locale = (await params).locale;
-  const posts = await getPostListAction();
+  const session = await getSession();
+  const posts = await getPostListAction({ take: 10 });
 
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900 text-primary">
       <BlogHeroSection />
-        {locale}
-      {JSON.stringify(posts, null, 2)}
 
-      {/* <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-        {blogPosts.map((post, index) => (
-          <div
-            key={index}
-            className="bg-white dark:bg-gray-800 rounded-xl shadow-md shadow-green/30 transition-all duration-300 hover:shadow-lg hover:shadow-green/40 overflow-hidden"
-          >
-            <Image
-              src={post.image}
-              alt={post.title}
-              width={400}
-              height={200}
-              className="w-full h-48 object-cover"
-            />
-            <div className="p-6">
-              <h3 className="text-xl font-semibold mb-2 text-green">
-                {post.title}
-              </h3>
-              <p className="text-gray-600 dark:text-gray-400 mb-4">
-                {post.description}
-              </p>
-              <Link
-                href={post.link}
-                className="text-green font-medium hover:underline inline-flex items-center"
-              >
-                Read More
-                <ArrowRight className="ml-2 h-4 w-4" />
-              </Link>
+      <div className="max-w-7xl container mx-auto px-4 py-10">
+        {session && session.user && (
+          <div className="p-5 border border-green/30 rounded-xl mb-5 flex items-center justify-between gap-2">
+            <div className="flex items-center gap-2">
+              <UserIcon className="w-4 h-4" />
+              <span>{session.user.name}</span>
             </div>
+            <Link href={"blog/create"} className="flex items-center gap-2 text-white bg-green py-2 px-4 rounded-lg">
+              Create
+              <PlusIcon className="w-4 h-4" />
+            </Link>
           </div>
-        ))}
-      </div> */}
+        )}
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+          {posts?.map((post, index) => (
+            <BlogCard key={index} post={post} locale={locale} />
+          ))}
+        </div>
+      </div>
     </div>
   );
 }

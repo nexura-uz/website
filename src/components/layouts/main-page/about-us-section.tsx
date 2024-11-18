@@ -48,7 +48,7 @@ export default function AboutUsSection() {
 
   return (
     <section className="py-16 bg-background text-primary">
-      <div className="container mx-auto px-4">
+      <div className="max-w-7xl container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center mb-12">
           <h2 className="text-3xl font-bold mb-4">{t("title")}</h2>
           <p className="text-xl text-gray-600 dark:text-gray-400 mb-6">
