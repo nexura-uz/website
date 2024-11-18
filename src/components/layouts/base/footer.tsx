@@ -31,7 +31,7 @@ export default function Footer() {
           {/* Company Information */}
           <div className="space-y-4">
             <div className='flex items-center gap-2'>
-              <Image src={"/logo.svg"} width={40} height={40} alt={""} />
+              <Image src={"/favicon.svg"} width={40} height={40} alt={""} />
               <h2 className="text-2xl font-bold text-white font-havelock">Nexura</h2>
             </div>
             <p className="text-sm">{t_f("sub_title")}</p>

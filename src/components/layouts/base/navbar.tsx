@@ -23,7 +23,7 @@ export default function Navbar() {
             <div className="max-w-7xl mx-auto px-4 py-12 sm:px-6 lg:px-8 w-full flex items-center jusify-between gap-5 px-5 py-3 border rounded-2xl shadow-lg shadow-green/30 bg-background text-primary">
                 <div className="flex items-center gap-2">
                     <Link href={"/"} className="flex items-center gap-1 text-xl font-havelock">
-                        <Image src={"/logo.svg"} width={40} height={40} alt={""} />
+                        <Image src={"/favicon.svg"} width={40} height={40} alt={""} />
                         <h3>Nexura</h3>
                     </Link>
                 </div>
@@ -66,7 +66,7 @@ function VerticalMenu() {
                     <SheetHeader>
                         <SheetTitle>
                             <Link href={"/"} className="flex items-center gap-1 text-xl font-havelock">
-                                <Image src={"/logo.svg"} width={40} height={40} alt={""} />
+                                <Image src={"/favicon.svg"} width={40} height={40} alt={""} />
                                 <h3>Nexura</h3>
                             </Link>
                         </SheetTitle>
