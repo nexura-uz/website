@@ -1,6 +1,14 @@
-import { redirect } from 'next/navigation';
+import HeroSection from "@/components/sections/hero";
+import PortfolioSection from "@/components/sections/portfolio";
+import ServicesSection from "@/components/sections/services";
+import Image from "next/image";
 
-// This page only renders when the app is built statically (output: 'export')
-export default async function RootPage() {
-  redirect('/uz');
+export default function Page() {
+  return (
+    <div>
+      <HeroSection />
+      <ServicesSection />
+      <PortfolioSection />
+    </div>
+  );
 }

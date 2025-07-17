@@ -1,15 +1,15 @@
-import BaseLayout from '@/components/base-layout';
-import NotFoundBlock from '@/components/layouts/base/not-found-block';
-import { routing } from '@/i18n/routing';
+import Link from "next/link";
 
-// This page renders when a route like `/unknown.txt` is requested.
-// In this case, the layout at `app/[locale]/layout.tsx` receives
-// an invalid value as the `[locale]` param and calls `notFound()`.
-
-export default async function GlobalNotFound() {
-  return (
-    <BaseLayout locale={routing.defaultLocale}>
-      <NotFoundBlock />
-    </BaseLayout>
-  );
+export default function NotFound() {
+    return (
+        <div className="w-screen h-screen flex flex-col gap-5 items-center justify-center">
+            <h3 className="text-3xl pb-3">404 - Sahifa topilmadi</h3>
+            <Link
+                href="/"
+                className="bg-primary inline-flex h-12 items-center justify-center rounded-xl px-8 text-sm font-medium text-white shadow-lg transition-all duration-200 hover:shadow-xl hover:scale-105"
+            >
+                Bosh sahifa
+            </Link>
+        </div>
+    )
 }

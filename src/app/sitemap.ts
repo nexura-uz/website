@@ -1,12 +1,9 @@
+import { base_url } from "@/utils/constants";
 import { MetadataRoute } from "next";
-import { getPostListAction } from "@/app/actions/posts";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  // Get the base URL from environment variable or default to localhost in development
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000";
 
-  const locales = ["uz", "ru", "en"];
-  const routes = ["", "about-us", "contact-us", "portfolio", "blog"];
+  const routes = ["", "porfolio"];
 
   const paths: {
     url: string;
@@ -16,25 +13,11 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   }[] = [];
 
   routes.map((route) => {
-    locales.map((locale) => {
-      paths.push({
-        url: `${baseUrl}/${locale}/${route}`,
-        lastModified: new Date(),
-        changeFrequency: "weekly" as const,
-        priority: 0.7,
-      });
-    });
-  });
-
-  const posts = await getPostListAction();
-  posts.map((post) => {
-    locales.map((locale) => {
-      paths.push({
-        url: `${baseUrl}/${locale}/blog/${post.slug}`,
-        lastModified: post.updatedAt,
-        changeFrequency: "weekly" as const,
-        priority: 0.7,
-      });
+    paths.push({
+      url: `${base_url}/${route}`,
+      lastModified: new Date(),
+      changeFrequency: "weekly" as const,
+      priority: 0.7,
     });
   });
 

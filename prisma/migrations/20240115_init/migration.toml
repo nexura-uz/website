@@ -1,6 +1,0 @@
-# This is an empty migration.
-
-[migration]
-name = "20240115_init"
-provider = "postgresql"
-primary = true
