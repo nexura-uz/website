@@ -13,14 +13,14 @@ export default function HeroSection() {
                 </p>
 
                 <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8">
-                    <a
+                    <Link
                         href={`tel:${phone_number}`}
                         target="_blank"
                         className="bg-primary inline-flex h-12 items-center justify-center rounded-xl px-8 text-sm font-medium text-white shadow-lg transition-all duration-200 hover:shadow-xl hover:scale-105"
 
                     >
                         Bog&apos;lanish
-                    </a>
+                    </Link>
                     <Link
                         href={"/portfolio"}
                         className="cursor-pointer inline-flex h-12 items-center justify-center rounded-xl border border-gray-600 bg-transparent px-8 text-sm font-medium text-gray-300 shadow-sm transition-all duration-200 hover:bg-gray-800 hover:text-white hover:border-gray-500"

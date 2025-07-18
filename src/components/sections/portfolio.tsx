@@ -4,15 +4,9 @@ import { useState } from 'react'
 import Image from 'next/image'
 import { ArrowRightIcon } from 'lucide-react'
 import Link from 'next/link';
+import { portfolios } from '@/utils/constants';
 
-const portfolios = [
-    {
-        link: "https://midea-kitchen.uz/ru",
-        title: "Midea",
-        description: "Midea kompaniyasining yuqori darajadagi oshxona jihozlarini namoyish qilish uchun biz ishlab chiqqan zamonaviy elektron tijorat platformasi",
-        image: "/projects/midea.png",
-    },
-];
+
 
 export default function PortfolioSection() {
     const [hoveredProject, setHoveredProject] = useState<number | null>(null)
@@ -37,13 +31,13 @@ export default function PortfolioSection() {
                                 className="w-full h-64 object-cover"
                             />
                             {/* image size 800x500 */}
-                            <div
+                            <Link href={project.link} target='_blank'
                                 className={`absolute inset-0 bg-primary/90 flex flex-col justify-center items-center p-6 transition-all duration-300 ease-in-out ${hoveredProject === index ? 'opacity-100' : 'opacity-0'
                                     }`}
                             >
-                                <a href={project.link} target='_blank' className="text-white text-xl font-semibold mb-2">{project.title}</a>
+                                <h3 className="text-white text-xl font-semibold mb-2">{project.title}</h3>
                                 <p className="text-white text-center">{project.description}</p>
-                            </div>
+                            </Link>
                         </div>
                     ))}
                 </div>

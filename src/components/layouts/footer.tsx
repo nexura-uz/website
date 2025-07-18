@@ -26,15 +26,15 @@ export default function Footer() {
                     </p>
 
                     <div className="flex gap-3 pt-2 mt-5 lg:mt-10">
-                        <a href="" target="_blank">
+                        <Link href="" target="_blank">
                             <InstagramSvgIcon className="w-8 h-8" />
-                        </a>
-                        <a href="" target="_blank">
+                        </Link>
+                        <Link href="" target="_blank">
                             <TelegramSvgIcon className="w-8 h-8" />
-                        </a>
-                        <a href="" target="_blank">
+                        </Link>
+                        <Link href="" target="_blank">
                             <YoutubeSvgIcon className="w-8 h-8" />
-                        </a>
+                        </Link>
                     </div>
                 </div>
 

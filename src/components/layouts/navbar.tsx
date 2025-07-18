@@ -23,9 +23,9 @@ export default function Navbar() {
                 <Link href="/portfolio" className="hover:text-primary">
                     <ImagesIcon className="w-6 h-6" />
                 </Link>
-                <a href={`tel:${phone_number}`} className="hover:text-primary">
+                <Link target="_blank" href={`tel:${phone_number}`} className="hover:text-primary">
                     <PhoneIcon className="w-6 h-6" />
-                </a>
+                </Link>
             </div>
         </nav>
     )
