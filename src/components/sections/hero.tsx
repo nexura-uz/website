@@ -5,7 +5,7 @@ export default function HeroSection() {
     return (
         <section className="flex items-center justify-center w-full min-h-[50vw] px-3 lg:px-0 py-10">
             <div>
-                <h1 className="text-5xl font-bold">Kelajak ilovalarini bugun yaratish</h1>
+                <h1 className="text-5xl font-bold text-center">Kelajak ilovalarini bugun yaratish</h1>
                 <div className="w-24 h-1 mx-auto bg-primary my-4"></div>
 
                 <p className="text-lg text-gray-400 max-w-2xl mx-auto text-center">

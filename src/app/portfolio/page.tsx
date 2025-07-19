@@ -1,15 +1,37 @@
+import { portfolios } from "@/utils/constants";
 import Link from "next/link";
+import Image from "next/image";;
 
 export default function Page() {
+
     return (
-        <div className="w-screen h-screen flex flex-col gap-5 items-center justify-center">
-            <h3 className="text-3xl pb-3">Sahifa dasturlash jarayonida</h3>
-            <Link
-                href="/"
-                className="bg-primary inline-flex h-12 items-center justify-center rounded-xl px-8 text-sm font-medium text-white shadow-lg transition-all duration-200 hover:shadow-xl hover:scale-105"
-            >
-                Bosh sahifa
-            </Link>
-        </div>
+        <section className="py-16 bg-background text-primary min-h-screen">
+            <div className="max-w-7xl mx-auto px-3">
+                <h2 className="text-3xl font-bold text-center mb-12">Loyihalar</h2>
+                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+                    {portfolios.map((project, index) => (
+                        <div
+                            key={index}
+                            className="relative overflow-hidden rounded-xl hover:shadow-md hover:shadow-primary/60 transition-all duration-300 ease-in-out cursor-pointer"
+                        >
+                            <Image
+                                src={project.image}
+                                alt={project.title}
+                                width={400}
+                                height={300}
+                                className="w-full h-64 object-cover"
+                            />
+                            {/* image size 800x500 */}
+                            <Link href={project.link} target='_blank'
+                                className="absolute inset-0 bg-gray-800/80 hover:bg-gray-800 flex flex-col justify-center items-center p-6 transition-all duration-300 ease-in-out"
+                            >
+                                <h3 className="text-white text-xl font-semibold mb-2">{project.title}</h3>
+                                <p className="text-white text-center">{project.description}</p>
+                            </Link>
+                        </div>
+                    ))}
+                </div>
+            </div>
+        </section>
     )
 }
