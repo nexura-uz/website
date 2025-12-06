@@ -12,7 +12,7 @@ export default function HeroSection() {
                     Biznesingiz uchun barcha turdagi dasturiy yechimlar va ularga xos dizayn.
                 </p>
 
-                <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8">
+                <div className="flex flex-row gap-4 justify-center items-center pt-8">
                     <Link
                         href={`tel:${phone_number}`}
                         target="_blank"

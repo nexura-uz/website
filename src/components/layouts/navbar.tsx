@@ -7,7 +7,7 @@ import { phone_number } from "@/utils/constants";
 
 export default function Navbar() {
     return (
-        <nav className="sticky top-0 lg:top-2 z-50 py-2 lg:rounded-t-xl rounded-b-xl shadow-sm shadow-primary/60 flex items-center justify-between max-w-7xl w-full mx-auto z-20 bg-gray-900">
+        <nav className="sticky top-0 lg:top-2 z-50 py-2 lg:rounded-t-xl rounded-b-xl shadow-sm shadow-primary/60 flex items-center justify-between container w-full mx-auto z-20 bg-gray-900">
             <Link href="/" className={`flex items-center text-xl px-3 ${havelock.className}`}>
                 <Image
                     src={logo_img}

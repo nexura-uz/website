@@ -59,7 +59,7 @@ const services = [
 export default function ServicesSection() {
     return (
         <section className="py-10 bg-gray-900 text-primary border-t border-primary">
-            <div className="max-w-7xl mx-auto px-3 lg:px-0">
+            <div className="container mx-auto px-3 lg:px-0">
                 <h2 className="text-3xl font-bold text-center mb-12">Xizmatlar</h2>
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
                     {services.map((service, index) => (

@@ -9,7 +9,7 @@ export default function Footer() {
     return (
         <footer className="bg-gray-900 text-white border-t border-primary flex flex-col gap-3 py-5 px-3 items-center justify-center">
 
-            <div className="max-w-7xl w-full px-2 grid grid-cols-2 lg:grid-cols-4 pb-3 border-b border-gray-700">
+            <div className="container w-full px-2 grid grid-cols-2 lg:grid-cols-4 pb-3 border-b border-gray-700">
                 <div className="col-span-3 mb-5 lg:mb-0">
                     <Link href="/" className={`text-2xl flex items-center mb-3 ${havelock.className}`}>
                         <Image
