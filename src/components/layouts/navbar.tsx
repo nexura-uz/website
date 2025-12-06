@@ -2,7 +2,7 @@ import Image from "next/image";
 import logo_img from "@/app/logo.png";
 import Link from "next/link";
 import { havelock } from "@/app/fonts"
-import { ImagesIcon, PhoneIcon } from "lucide-react";
+import { PhoneIcon } from "lucide-react";
 import { phone_number } from "@/utils/constants";
 
 export default function Navbar() {
@@ -20,9 +20,6 @@ export default function Navbar() {
             </Link>
 
             <div className="flex gap-3 items-center justify-end px-3">
-                <Link href="/portfolio" className="hover:text-primary">
-                    <ImagesIcon className="w-6 h-6" />
-                </Link>
                 <Link target="_blank" href={`tel:${phone_number}`} className="hover:text-primary">
                     <PhoneIcon className="w-6 h-6" />
                 </Link>
