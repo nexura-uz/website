@@ -23,6 +23,12 @@ export const portfolios = [
         image: "/projects/endo-tech.png",
     },
     {
+        link: "https://easysale.uz",
+        title: "EasySale",
+        description: "Chakana savdo biznesingizni bizning to‘liq ERP va POS yechimimiz bilan yangi bosqichga olib chiqing. Easy-Sale birgina qudratli platformadan bir nechta do‘konlarni boshqarish, omborni nazorat qilish va savdoni oshirishga yordam beradi.",
+        image: "/projects/easysale.png",
+    },
+    {
         link: "https://t.me/goodwellcatalog_bot",
         title: "Goodwell Catalog",
         description: "Goodwell mahsulotlari uchun telegram bot",

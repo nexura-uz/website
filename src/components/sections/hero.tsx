@@ -27,6 +27,12 @@ export default function HeroSection() {
                     >
                         Bizning loyihalar
                     </Link>
+                    <a
+                        href={"https://mirahmadov.uz"}
+                        className="cursor-pointer hidden lg:inline-flex h-12 items-center justify-center rounded-xl border border-transparent px-8 text-sm font-medium text-black shadow-sm transition-all duration-200 bg-white hover:bg-primary hover:text-white"
+                    >
+                        NexuraWebOS
+                    </a>
                 </div>
             </div>
         </section>
