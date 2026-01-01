@@ -2,5 +2,7 @@
 
 @theme {
   --color-primary: oklch(63.86% 0.129 166.40);
+  --color-black: oklch(21.07% 0.034 265.58);
+  --color-gray: oklch(44.61% 0.030 257.68);
   --color-light-gray: oklch(97.02% 0.000 0);
 }

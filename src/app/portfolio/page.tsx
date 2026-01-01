@@ -11,7 +11,7 @@ export default function Page() {
                     {portfolios.map((project, index) => (
                         <div
                             key={index}
-                            className="relative overflow-hidden rounded-xl hover:shadow-md hover:shadow-primary/60 transition-all duration-300 ease-in-out cursor-pointer"
+                            className="relative overflow-hidden rounded-xl hover:shadow-md hover:shadow-primary/60 transition-all duration-300 ease-in-out cursor-pointer group"
                         >
                             <Image
                                 src={project.image}
@@ -22,10 +22,10 @@ export default function Page() {
                             />
                             {/* image size 800x500 */}
                             <Link href={project.link} target='_blank'
-                                className="absolute inset-0 bg-gray-800/80 hover:bg-gray-800 flex flex-col justify-center items-center p-6 transition-all duration-300 ease-in-out"
+                                className="absolute inset-0 bg-gray-800/80 hover:bg-light-gray/80 flex flex-col justify-center items-center p-6 transition-all duration-300 ease-in-out"
                             >
-                                <h3 className="text-white text-xl font-semibold mb-2">{project.title}</h3>
-                                <p className="text-white text-center">{project.description}</p>
+                                <h3 className="text-primary text-xl font-semibold mb-2">{project.title}</h3>
+                                <p className="text-white group-hover:text-gray text-center">{project.description}</p>
                             </Link>
                         </div>
                     ))}
