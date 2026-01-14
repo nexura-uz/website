@@ -22,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="uz">
       <body className={`min-h-screen flex flex-col justify-between text-black ${gilroy.className}`}>
-        <nav className="sticky shadow-sm shadow-primary/60 w-full z-20 bg-white">
+        <nav className="sticky top-0 shadow-sm shadow-primary/60 w-full z-20 bg-white">
           <div className="py-3 w-full flex items-center justify-between container mx-auto">
             <Link href="/" className={`flex items-center text-xl text-primary px-3  ${havelock.className}`}>
               <Image
