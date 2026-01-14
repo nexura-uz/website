@@ -6,7 +6,7 @@ import logo_img from "@/app/logo.png";
 import Link from "next/link";
 import { MapPinIcon, PhoneIcon } from "lucide-react";
 import { phone_number } from "@/utils/constants";
-import { InstagramSvgIcon, TelegramSvgIcon, YoutubeSvgIcon } from "@/components/svg-icons";
+import { InstagramSvgIcon, YoutubeSvgIcon } from "@/components/svg-icons";
 
 
 export const metadata: Metadata = {
@@ -22,23 +22,25 @@ export default function RootLayout({
   return (
     <html lang="uz">
       <body className={`min-h-screen flex flex-col justify-between text-black ${gilroy.className}`}>
-        <nav className="sticky top-0 lg:top-2 z-50 py-1 lg:rounded-t-xl rounded-b-xl shadow-sm shadow-primary/60 flex items-center justify-between container w-full mx-auto z-20 bg-white">
-          <Link href="/" className={`flex items-center text-xl text-primary px-3  ${havelock.className}`}>
-            <Image
-              src={logo_img}
-              width={32}
-              height={32}
-              alt="logo"
-              className="mr-2"
-            />
-            NEXURA
-          </Link>
-
-          <div className="flex gap-3 items-center justify-end px-3">
-            <Link target="_blank" href={`tel:${phone_number}`} className="hover:text-primary flex items-center gap-3 border border-gray-200 px-3 py-1 rounded-lg">
-              <PhoneIcon className="w-6 h-6" />
-              <span className={`hidden lg:block text-lg font-bold`}>(93) 975 6883</span>
+        <nav className="sticky shadow-sm shadow-primary/60 w-full z-20 bg-white">
+          <div className="py-3 w-full flex items-center justify-between container mx-auto">
+            <Link href="/" className={`flex items-center text-xl text-primary px-3  ${havelock.className}`}>
+              <Image
+                src={logo_img}
+                width={32}
+                height={32}
+                alt="logo"
+                className="mr-2"
+              />
+              NEXURA
             </Link>
+
+            <div className="flex gap-3 items-center justify-end px-3">
+              <Link target="_blank" href={`tel:${phone_number}`} className="hover:text-primary flex items-center gap-3 shadow shadow-primary/30 px-3 py-1 rounded-lg">
+                <PhoneIcon className="w-6 h-6" />
+                <span className={`hidden lg:block text-lg font-bold`}>(93) 975 6883</span>
+              </Link>
+            </div>
           </div>
         </nav>
 
@@ -62,13 +64,13 @@ export default function RootLayout({
               </p>
 
               <div className="flex gap-3 pt-2 mt-5 lg:mt-10">
-                <Link href="" target="_blank">
+                <Link href="https://www.instagram.com/nexura_uz/" target="_blank">
                   <InstagramSvgIcon className="w-8 h-8" />
                 </Link>
-                <Link href="" target="_blank">
+                {/* <Link href="" target="_blank">
                   <TelegramSvgIcon className="w-8 h-8" />
-                </Link>
-                <Link href="" target="_blank">
+                </Link> */}
+                <Link href="https://www.youtube.com/@nexura_uz" target="_blank">
                   <YoutubeSvgIcon className="w-8 h-8" />
                 </Link>
               </div>

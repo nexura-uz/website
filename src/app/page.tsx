@@ -8,10 +8,10 @@ export default function Page() {
     <div>
       <section className="flex items-center justify-center w-full min-h-[40vw] px-3 lg:px-0 py-10">
         <div>
-          <h1 className="text-5xl font-bold text-center">Kelajak ilovalarini bugun yaratish</h1>
+          <h1 className="text-4xl lg:text-5xl font-bold text-center">Kelajak ilovalarini bugun yaratish</h1>
           <div className="w-24 h-1 mx-auto bg-primary my-4"></div>
 
-          <p className="text-lg text-gray max-w-2xl mx-auto text-center">
+          <p className="lg:text-lg text-gray max-w-2xl mx-auto text-center">
             Biznesingiz uchun barcha turdagi dasturiy yechimlar va ularga xos dizayn.
           </p>
 
@@ -40,10 +40,10 @@ export default function Page() {
         </div>
       </section>
 
-      <section className="py-10 text-primary border-t border-primary">
+      <section className="py-5 lg:py-10 text-primary border-t border-primary">
         <div className="container mx-auto px-3 lg:px-0">
-          <h2 className="text-3xl font-bold text-center mb-12">Xizmatlar</h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+          <h2 className="text-3xl font-bold text-center mb-8 lg:mb-12">Xizmatlar</h2>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 lg:mb-12">
             {services.map((service, index) => (
               <div key={index} className="bg-light-gray p-6 rounded-xl transition-all duration-300 hover:shadow-md hover:shadow-primary/60 cursor-pointer">
                 <div className="w-16 h-16 mb-4">
@@ -57,7 +57,7 @@ export default function Page() {
         </div>
       </section>
 
-      <section className="py-16 bg-background text-primary">
+      <section className="py-10 lg:py-16 bg-background text-primary">
         <div className="container mx-auto px-3">
           <h2 className="text-3xl font-bold text-center mb-12">Loyihalar</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
