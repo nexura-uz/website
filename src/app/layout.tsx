@@ -109,7 +109,7 @@ export default function RootLayout({
           </div>
 
           <div className={`${havelock.className} text-primary`}>
-            &copy;NEXURA. 2025{" "}
+            &copy;NEXURA. 2026{" "}
           </div>
         </footer>
       </body>
