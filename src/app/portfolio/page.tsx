@@ -1,11 +1,10 @@
 import { portfolios } from "@/utils/constants";
 import Link from "next/link";
-import Image from "next/image";import { Metadata } from "next";
-;
+import Image from "next/image"; import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Nexura - Portfolio",
-  description: "Bizing loyihalar",
+    title: "Nexura - Portfolio",
+    description: "Bizning loyihalar",
 };
 
 export default function Page() {
