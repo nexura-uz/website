@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://nexura.uz/sitemap.xml
+
+# Block access to source files
+Disallow: /locales/
+Disallow: /js/
+Disallow: /css/
