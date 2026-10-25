@@ -4,8 +4,8 @@ export const site = {
   url: "https://www.nexura.uz",
   phone: "+998 93 975 68 83",
   phoneHref: "tel:+998939756883",
-  // Nexura work Telegram account. TBD: replace once the work account exists.
-  telegramHandle: "nexura_team",
+  // Telegram account for t.me links. Placeholder until the Nexura work account exists.
+  telegramHandle: "mirahmadov_m",
   socials: {
     instagram: "https://www.instagram.com/nexura_uz",
     youtube: "https://www.youtube.com/@nexura_uz",

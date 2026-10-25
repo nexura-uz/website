@@ -11,8 +11,9 @@ Decisions from the founder, 2026-10-25. Some differ from CLAUDE.md; they are mar
 | Telegram links | `t.me/<handle>?text=…`, handle in `site.config.ts` (currently a `nexura_team` placeholder) |
 | Package manager | npm |
 | Stack | Next.js 16.4 App Router (`page.tsx` per route), Tailwind v4 `@theme` tokens, Cache Components on |
+| Services | ⚠️ Added a 5th service, **mobile & desktop apps** (iOS, Android, Windows, macOS), from **$5,000** (founder, 2026-10-25). Pages: `/uz/xizmatlar/ilovalar`, `/ru/uslugi/prilozheniya`, `/en/services/apps`. Not in CLAUDE.md §1/§7 yet. |
 
-⚠️ **Legal note for the planning project:** lead data (name, phone) now goes through Vercel to Telegram, not to a server in Uzbekistan. Ask fewer questions to keep the data small, and route handlers must never log request bodies. If the lawyer says localization applies, the swap is one function (`lib/leads.ts`).
+⚠️ **Legal note for the planning project:** lead data (name, phone) now goes through Vercel to Telegram, not to a server in Uzbekistan. Ask fewer questions to keep the data small, and route handlers must never log request bodies. If the lawyer says localization applies, the swap is one function (`sendToTelegram` in `lib/actions/lead.ts`).
 
 ---
 

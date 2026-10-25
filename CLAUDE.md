@@ -1,7 +1,7 @@
 # CLAUDE.md — nexura.uz website (build project)
 
 > Rename this file to `CLAUDE.md` in the website project.
-> Source: the **Nexura SMM planning project**. **Last synced: 2026-10-24.** It has the complete website plan and all the context behind it.
+> Source: the **Nexura SMM planning project**. **Last synced: 2026-10-24** (+ founder edit 2026-10-25: mobile & desktop apps service). It has the complete website plan and all the context behind it.
 > Brand status: **done** (palette v2 + logo v1 + Geologica). Build status: **Phase A not started.** Start with §11 Phase A, task 1: brand install.
 > **The planning project decides; this project builds.** Strategy, pricing, positioning and copy direction change only in the planning project, which then sends an updated version of this file. If building surfaces a problem with the plan, flag it to the founder instead of quietly changing strategy.
 
@@ -23,9 +23,9 @@
 | | |
 |---|---|
 | Name | **NEXURA**, www.nexura.uz (`nexura.uz` 308 → `www`) |
-| What | Small **senior** software studio: custom business systems (ERP/POS/warehouse/branches), integrations, e-commerce, websites, Telegram bots, mobile apps |
-| Team | 3 senior developers (5+ years each), part-time on Nexura. One lives in Europe (full-time senior frontend engineer elsewhere). Founder speaks fluent English. |
-| Location | Marg'ilon, Fergana region, Uzbekistan. **No office.** |
+| What | Small **senior** software studio: custom business systems (ERP/POS/warehouse/branches), integrations, e-commerce, websites, Telegram bots, mobile & desktop apps (iOS, Android, Windows, macOS) |
+| Team | **5 developers, 3 of them senior (5+ years each)**; **20+ projects delivered** (founder, 2026-10-25). Part-time on Nexura (never claim full-time). One lives in Europe (full-time senior frontend engineer elsewhere). Founder: **Muhammadaziz** (name may be used publicly; no photo yet). Speaks fluent English. Desktop apps: Electron. |
+| Location | **Public: Tashkent / Oʻzbekiston only.** Never mention the founder's home town on the site, in copy or in schema (founder, 2026-10-25). **No office.** |
 | Phone | +998 93 975 68 83 |
 | Legal | ⚠️ **Not a registered legal entity, not an IT Park resident.** Payments go to a personal Visa card. Registration is being discussed with an accountant. |
 | Own product | **EasySale**: retail ERP/POS SaaS (easysale.uz), 10+ paying stores. Separate brand and project; on this site it's *proof*. |
@@ -39,6 +39,8 @@
 - Core offer: **custom business systems + integrations**. Proof: Goodwell.
 - Trust: **EasySale**, our own system running in 10+ shops.
 - Supporting: websites and e-commerce. Proof: Midea, TechVision.
+- **AI is a feature inside existing services, not a separate service** (founder, 2026-10-25): e.g. a Telegram bot answering customer questions from the catalog, AI reading documents and sorting messages in business systems. Use plain, concrete wording, never "AI-powered" buzzwords.
+- Supporting: **mobile & desktop apps** (iOS, Android, Windows, macOS), usually as part of a system (staff/customer app on the same data). Proof: Goodwell app (screenshots only with consent; the site uses a generic mockup).
 
 One message everywhere:
 - **UZ:** Biznesingizni avtomatlashtiramiz.
@@ -67,6 +69,7 @@ Local (UZ/RU pages show "…dan boshlab" / "от …"):
 | Telegram bot | $400 |
 | Biznes sayt | $1,000 |
 | Online do'kon | $3,000 |
+| Mobil va desktop ilovalar | $5,000 |
 | Biznes tizim / integratsiya | $6,000 |
 | Support | $X/month (TBD) |
 
@@ -250,6 +253,7 @@ Locales: `/uz` (default, `x-default`), `/ru`, `/en`. Social content is Uzbek onl
 /uz/xizmatlar/telegram-bot     /ru/uslugi/telegram-bot     /en/services/telegram-bots
 /uz/xizmatlar/sayt             /ru/uslugi/sajt             /en/services/web
 /uz/xizmatlar/internet-dokon   /ru/uslugi/internet-magazin /en/services/e-commerce
+/uz/xizmatlar/ilovalar         /ru/uslugi/prilozheniya     /en/services/apps
 /uz/xizmatlar/biznes-tizim     /ru/uslugi/biznes-sistema   /en/services/business-systems
                                                            /en/services/integrations
 /uz/loyihalar                  /ru/proekty                 /en/work
@@ -273,7 +277,7 @@ Locales: `/uz` (default, `x-default`), `/ru`, `/en`. Social content is Uzbek onl
 | # | Section | Content | CTA |
 |---|---|---|---|
 | 1 | **Hero** | H1 + sub + trust line; a real product visual (not an illustration) | **Loyihani muhokama qilish** (form) · **Telegram'da yozish** |
-| 2 | Trust bar | Midea, Goodwell, TechVision logos + 3 facts: "6+ loyiha", "10+ do'kon EasySale'da", "5+ yillik senior jamoa" | — |
+| 2 | Trust bar | Midea, Goodwell, TechVision logos + 3 facts: "20+ loyiha", "10+ do'kon EasySale'da", "5 dasturchi, 3 senior (5+ yil)" | — |
 | 3 | Problem | "Tanish holatmi?": notebook records, lost stock, can't see branches, orders lost in Telegram chats | — |
 | 4 | Services | 4 offers with "…dan boshlab" prices (**not** 4 identical cards; vary the layout) | Batafsil |
 | 5 | Featured case | Goodwell: problem → what we built → 3 numbers → screenshot | Loyihani ko'rish |
@@ -334,7 +338,7 @@ Short founder story, team (3 seniors, years, stack; **no names or photos without
 **Telegram accounts:** the founder keeps their personal account. A **separate Nexura work account** (new SIM, e.g. `@nexura_team`, handle TBD) is logged in alongside it in the same app. Optional Telegram Premium → Business: greeting, away message, hours, quick replies. Make the handle a **single config value**.
 
 ### 9.2 Form (multi-step)
-1. **Nima kerak?** Telegram bot · Sayt · Internet do'kon · Biznes tizim / integratsiya · Bilmayman, maslahat kerak
+1. **Nima kerak?** Telegram bot · Sayt · Internet do'kon · Mobil / desktop ilova · Biznes tizim / integratsiya · Bilmayman, maslahat kerak
 2. **Byudjet:** <$500 · $500–2k · $2–5k · $5–15k · $15k+ · Bilmayman
 3. **Qachon?** Shoshilinch (1 oy) · 1–3 oy · Shunchaki o'rganyapman
 4. **Kontakt:** Ism* · Telefon* (+998 mask) **or** Telegram username · Kompaniya · Izoh. EN: Email* required.
@@ -373,6 +377,7 @@ Form ─► Next.js route handler (zod validation, Turnstile check)
 | Telegram bot | Salom! Biznesim uchun Telegram bot kerak. Narx va muddat haqida bilmoqchiman. | Здравствуйте! Нужен Telegram-бот для бизнеса. Хочу узнать цену и сроки. |
 | Sayt | Salom! Kompaniyamiz uchun sayt kerak. Narxi qancha bo'ladi? | Здравствуйте! Нужен сайт для компании. Сколько будет стоить? |
 | Internet do'kon | Salom! Internet do'kon ochmoqchiman. Maslahat bera olasizmi? | Здравствуйте! Хочу открыть интернет-магазин. Можете проконсультировать? |
+| Ilova | Salom! Biznesimiz uchun mobil/desktop ilova kerak. Narx va muddat haqida bilmoqchiman. | Здравствуйте! Нужно мобильное/десктоп-приложение для бизнеса. Хочу узнать цену и сроки. |
 | Biznes tizim | Salom! Biznesimizni avtomatlashtirish (ombor/filiallar/savdo) bo'yicha gaplashmoqchiman. | Здравствуйте! Хотим автоматизировать бизнес (склад/филиалы/продажи). |
 | Case page | Salom! {Case} loyihangizni ko'rdim, bizga ham shunga o'xshash tizim kerak. | Здравствуйте! Видел ваш проект {Case}, нам нужно похожее решение. |
 
@@ -410,6 +415,7 @@ GA4 + **Yandex Metrica** (Webvisor) + Google Search Console + Yandex Webmaster.
 | Telegram bot | telegram bot yaratish | разработка телеграм бота, заказать телеграм бот ташкент | telegram bot development |
 | Sayt | sayt yaratish, sayt yaratish narxi | создание сайтов ташкент, разработка сайта цена | web development company uzbekistan |
 | Internet do'kon | internet do'kon yaratish | создание интернет магазина ташкент, интернет магазин под ключ | e-commerce development |
+| Ilova | mobil ilova yaratish | разработка мобильных приложений ташкент | mobile app development uzbekistan |
 | Biznes tizim | biznesni avtomatlashtirish, ombor dasturi, CRM tizimi | автоматизация бизнеса, складской учет программа, разработка CRM/ERP | custom ERP development, systems integration |
 | Home | dasturlash kompaniyasi, IT kompaniya Farg'ona / Toshkent | IT компания ташкент, разработка ПО узбекистан | software development company uzbekistan |
 
@@ -476,6 +482,7 @@ One A/B test per month (headline, primary CTA Telegram vs form, prices shown vs 
 | Founder video | **TBD** | Placeholder section |
 | Fonts | ✅ **Geologica** (§5 Typography) | — |
 | Logo & palette | ✅ **v1 logo + palette v2 done** (§5.1–5.2) | Use as-is. A "block N" v2 logo may come later; the `<Logo>` component makes it a drop-in swap. |
+| One AI project | ⚠️ **Under NDA** | Never name, describe, screenshot or hint at it anywhere (site, cases, SEO copy, this repo). It only backs our ability to deliver AI features. |
 | Taste skill A vs B | Decide after the hero test (§6) | — |
 
 ---

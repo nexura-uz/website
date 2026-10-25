@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 956" width="440" height="956">
+<title>Mobile app mockup (placeholder UI)</title>
+<!-- Same placeholder-UI language as the hero admin panel and the LinkedIn banner. Brand palette only. -->
+<defs><clipPath id="screen"><rect width="440" height="956" rx="56"/></clipPath></defs>
+<g clip-path="url(#screen)">
+  <rect width="440" height="956" fill="#FFFFFF"/>
+
+  <!-- status bar -->
+  <rect x="44" y="26" width="46" height="14" rx="5" fill="#0F1F1B" fill-opacity="0.85"/>
+  <rect x="157" y="14" width="126" height="37" rx="18.5" fill="#000"/>
+  <rect x="330" y="27" width="20" height="12" rx="3" fill="#0F1F1B" fill-opacity="0.85"/>
+  <rect x="356" y="26" width="30" height="14" rx="4.5" fill="none" stroke="#0F1F1B" stroke-opacity="0.85" stroke-width="1.6"/>
+  <rect x="358.5" y="28.5" width="22" height="9" rx="2.5" fill="#0F1F1B" fill-opacity="0.85"/>
+
+  <!-- header -->
+  <rect x="24" y="78" width="40" height="40" rx="11" fill="#0B5D4B"/>
+  <rect x="78" y="84" width="130" height="14" rx="5" fill="#0F1F1B" fill-opacity="0.85"/>
+  <rect x="78" y="106" width="84" height="9" rx="4" fill="#5B6B66" fill-opacity="0.5"/>
+  <rect x="376" y="78" width="40" height="40" rx="12" fill="#F4F7F5"/>
+  <circle cx="396" cy="98" r="7" fill="none" stroke="#5B6B66" stroke-width="2"/>
+  <circle cx="408" cy="84" r="5.5" fill="#3DDC97"/>
+
+  <!-- hero KPI card -->
+  <rect x="24" y="146" width="392" height="168" rx="22" fill="#0B5D4B"/>
+  <rect x="48" y="174" width="96" height="10" rx="4" fill="#FFFFFF" fill-opacity="0.55"/>
+  <rect x="48" y="198" width="178" height="26" rx="7" fill="#FFFFFF"/>
+  <rect x="48" y="236" width="56" height="7" rx="3.5" fill="#3DDC97"/>
+  <g fill="#FFFFFF" fill-opacity="0.22">
+    <rect x="258" y="250" width="16" height="40" rx="4"/><rect x="282" y="232" width="16" height="58" rx="4"/>
+    <rect x="306" y="242" width="16" height="48" rx="4"/><rect x="330" y="218" width="16" height="72" rx="4"/>
+    <rect x="354" y="228" width="16" height="62" rx="4"/>
+  </g>
+  <rect x="378" y="200" width="16" height="90" rx="4" fill="#3DDC97"/>
+
+  <!-- quick actions -->
+  <g>
+    <rect x="24" y="338" width="88" height="88" rx="18" fill="#F4F7F5"/>
+    <rect x="125" y="338" width="88" height="88" rx="18" fill="#F4F7F5"/>
+    <rect x="226" y="338" width="88" height="88" rx="18" fill="#F4F7F5"/>
+    <rect x="327" y="338" width="89" height="88" rx="18" fill="#F4F7F5"/>
+    <rect x="52" y="360" width="32" height="32" rx="9" fill="#0B5D4B" fill-opacity="0.14"/>
+    <rect x="153" y="360" width="32" height="32" rx="9" fill="#0B5D4B" fill-opacity="0.14"/>
+    <rect x="254" y="360" width="32" height="32" rx="9" fill="#0B5D4B" fill-opacity="0.14"/>
+    <rect x="355" y="360" width="32" height="32" rx="9" fill="#0B5D4B" fill-opacity="0.14"/>
+    <rect x="44" y="404" width="48" height="7" rx="3.5" fill="#5B6B66" fill-opacity="0.5"/>
+    <rect x="145" y="404" width="48" height="7" rx="3.5" fill="#5B6B66" fill-opacity="0.5"/>
+    <rect x="246" y="404" width="48" height="7" rx="3.5" fill="#5B6B66" fill-opacity="0.5"/>
+    <rect x="347" y="404" width="48" height="7" rx="3.5" fill="#5B6B66" fill-opacity="0.5"/>
+  </g>
+
+  <!-- list -->
+  <rect x="24" y="458" width="120" height="13" rx="5" fill="#0F1F1B" fill-opacity="0.85"/>
+  <rect x="356" y="460" width="60" height="9" rx="4" fill="#0B5D4B" fill-opacity="0.6"/>
+  <g>
+    <rect x="24" y="490" width="392" height="76" rx="18" fill="#F4F7F5"/>
+    <rect x="40" y="506" width="44" height="44" rx="12" fill="#FFFFFF"/>
+    <rect x="98" y="512" width="150" height="11" rx="4.5" fill="#0F1F1B" fill-opacity="0.8"/>
+    <rect x="98" y="532" width="96" height="8" rx="4" fill="#5B6B66" fill-opacity="0.5"/>
+    <rect x="330" y="512" width="70" height="11" rx="4.5" fill="#0F1F1B" fill-opacity="0.8"/>
+    <rect x="356" y="532" width="44" height="8" rx="4" fill="#3DDC97"/>
+
+    <rect x="24" y="578" width="392" height="76" rx="18" fill="#F4F7F5"/>
+    <rect x="40" y="594" width="44" height="44" rx="12" fill="#FFFFFF"/>
+    <rect x="98" y="600" width="130" height="11" rx="4.5" fill="#0F1F1B" fill-opacity="0.8"/>
+    <rect x="98" y="620" width="110" height="8" rx="4" fill="#5B6B66" fill-opacity="0.5"/>
+    <rect x="340" y="600" width="60" height="11" rx="4.5" fill="#0F1F1B" fill-opacity="0.8"/>
+    <rect x="364" y="620" width="36" height="8" rx="4" fill="#5B6B66" fill-opacity="0.35"/>
+
+    <rect x="24" y="666" width="392" height="76" rx="18" fill="#F4F7F5"/>
+    <rect x="40" y="682" width="44" height="44" rx="12" fill="#FFFFFF"/>
+    <rect x="98" y="688" width="164" height="11" rx="4.5" fill="#0F1F1B" fill-opacity="0.8"/>
+    <rect x="98" y="708" width="80" height="8" rx="4" fill="#5B6B66" fill-opacity="0.5"/>
+    <rect x="326" y="688" width="74" height="11" rx="4.5" fill="#0F1F1B" fill-opacity="0.8"/>
+    <rect x="356" y="708" width="44" height="8" rx="4" fill="#3DDC97"/>
+
+    <rect x="24" y="754" width="392" height="76" rx="18" fill="#F4F7F5"/>
+    <rect x="40" y="770" width="44" height="44" rx="12" fill="#FFFFFF"/>
+    <rect x="98" y="776" width="120" height="11" rx="4.5" fill="#0F1F1B" fill-opacity="0.8"/>
+    <rect x="98" y="796" width="100" height="8" rx="4" fill="#5B6B66" fill-opacity="0.5"/>
+  </g>
+
+  <!-- tab bar -->
+  <rect x="0" y="852" width="440" height="104" fill="#FFFFFF"/>
+  <rect x="0" y="852" width="440" height="1" fill="#5B6B66" fill-opacity="0.15"/>
+  <rect x="32" y="872" width="56" height="30" rx="15" fill="#0B5D4B"/>
+  <rect x="50" y="881" width="20" height="12" rx="3" fill="#FFFFFF"/>
+  <g fill="#5B6B66" fill-opacity="0.35">
+    <rect x="134" y="877" width="20" height="20" rx="5"/>
+    <rect x="210" y="877" width="20" height="20" rx="5"/>
+    <rect x="286" y="877" width="20" height="20" rx="5"/>
+    <circle cx="372" cy="887" r="10"/>
+  </g>
+  <rect x="147" y="936" width="146" height="5" rx="2.5" fill="#0F1F1B"/>
+</g>
+</svg>

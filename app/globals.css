@@ -16,3 +16,10 @@
 body {
   @apply bg-white text-black antialiased;
 }
+
+/* Multi-step form: replays each time a hidden step becomes visible. */
+@keyframes step-in {
+  from { opacity: 0; transform: translateX(12px); }
+}
+.step-in { animation: step-in 0.3s cubic-bezier(0.22, 1, 0.36, 1); }
+@media (prefers-reduced-motion: reduce) { .step-in { animation: none; } }
