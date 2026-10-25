@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+/* Brand palette v2: copied from brand/colors.css. The only brand colors; no other hex in components. */
+@theme {
+  --color-primary: oklch(42.82% 0.079 172.87);     /* #0B5D4B deep green */
+  --color-accent: oklch(79.68% 0.164 159.69);      /* #3DDC97 mint: never as text on white */
+  --color-black: oklch(22.35% 0.023 176.38);       /* #0F1F1B ink */
+  --color-gray: oklch(51.28% 0.021 174.64);        /* #5B6B66 muted */
+  --color-light-gray: oklch(97.33% 0.004 157.18);  /* #F4F7F5 surface */
+}
+
+@theme inline {
+  --font-sans: var(--font-geologica);
+}
+
+body {
+  @apply bg-white text-black antialiased;
+}

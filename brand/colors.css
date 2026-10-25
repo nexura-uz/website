@@ -1,0 +1,10 @@
+/* Nexura palette v2 (2026-10-24): deep green + mint, green-tinted neutrals.
+   v1 (retired): primary #10A47A, black #111828 (navy), gray #4A5565, light-gray #F5F5F5.
+   #10A47A stays with EasySale as the product brand color. */
+@theme {
+  --color-primary: oklch(42.82% 0.079 172.87);     /* #0B5D4B deep green: logo, dark sections, buttons (white text 7.8:1) */
+  --color-accent: oklch(79.68% 0.164 159.69);      /* #3DDC97 mint: highlights, CTAs on dark green (dark text 9.6:1) */
+  --color-black: oklch(22.35% 0.023 176.38);       /* #0F1F1B ink: headings, body text (15.8:1 on light-gray) */
+  --color-gray: oklch(51.28% 0.021 174.64);        /* #5B6B66 muted text (5.6:1 on white) */
+  --color-light-gray: oklch(97.33% 0.004 157.18);  /* #F4F7F5 light surfaces */
+}
