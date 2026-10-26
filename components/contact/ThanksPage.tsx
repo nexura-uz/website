@@ -1,5 +1,6 @@
 import { ArrowUpRight, Check, Send } from "lucide-react";
 import Link from "next/link";
+import { LeadTracker } from "@/components/analytics/LeadTracker";
 import { getDictionary } from "@/content/dictionaries";
 import type { Locale } from "@/lib/i18n";
 import { href } from "@/lib/routes";
@@ -12,7 +13,8 @@ export function ThanksPage({ locale }: { locale: Locale }) {
   const s = t.contact.form.success;
 
   return (
-    <main className="flex-1 px-5 pb-24 pt-16 md:px-8 md:pb-36 md:pt-28">
+    <main data-cta="thank_you" className="flex-1 px-5 pb-24 pt-16 md:px-8 md:pb-36 md:pt-28">
+      <LeadTracker />
       <div className="mx-auto max-w-[1200px]">
         <span className="grid size-12 place-items-center rounded-2xl bg-primary text-white">
           <Check aria-hidden className="size-6" strokeWidth={2.5} />

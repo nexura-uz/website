@@ -152,7 +152,7 @@ export const en: Dictionary = {
     metaTitle: "Privacy Policy | Nexura",
     metaDescription: "What data the Nexura website collects, why we use it and where it is stored.",
     title: "Privacy policy",
-    updated: "Last updated: October 25, 2026",
+    updated: "Last updated: October 26, 2026",
     intro: "This page explains what data nexura.uz collects, why we use it and where it is stored.",
     sections: [
       {
@@ -184,7 +184,7 @@ export const en: Dictionary = {
       {
         title: "Cookies and browser storage",
         body: [
-          "The site keeps two things in your browser’s storage: which link brought you here (see above) and that you closed the cookie notice. No analytics or advertising tools are connected right now. If we add them, this page will be updated first.",
+          "We use Google Analytics to improve the site: which pages were opened, which buttons were clicked and where visitors came from. Analytics cookies are set only if you accept; if you decline, Google receives only cookieless, aggregated measurements. No names, phone numbers or other personal data are sent to analytics. Your browser’s storage also keeps which link brought you here and your cookie choice. No advertising tools are used.",
         ],
       },
       {
@@ -195,9 +195,10 @@ export const en: Dictionary = {
     contactTitle: "Contact",
   },
   cookie: {
-    text: "We use cookies and browser storage to run this site.",
+    text: "We use Google Analytics cookies to improve this site. No personal data is collected.",
     link: "Learn more",
-    ok: "OK",
+    ok: "Accept",
+    decline: "Decline",
   },
   faq: {
     eyebrow: "FAQ",

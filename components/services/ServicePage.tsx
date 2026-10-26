@@ -37,7 +37,7 @@ export function ServicePage({ locale, service }: { locale: Locale; service: Serv
         }}
       />
 
-      <section className="px-5 pb-20 pt-14 md:px-8 md:pb-28 md:pt-28">
+      <section data-cta="service_hero" className="px-5 pb-20 pt-14 md:px-8 md:pb-28 md:pt-28">
         <div className="mx-auto grid max-w-[1200px] gap-12 lg:grid-cols-12 lg:items-end">
           <div className="lg:col-span-8">
             <p className="font-mono text-xs uppercase tracking-[0.14em] text-gray">{c.eyebrow}</p>

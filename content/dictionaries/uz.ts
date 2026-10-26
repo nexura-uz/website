@@ -150,7 +150,7 @@ export const uz = {
     metaTitle: "Maxfiylik siyosati | Nexura",
     metaDescription: "Nexura saytida qanday ma’lumotlar yigʻiladi, nima uchun ishlatiladi va qayerda saqlanadi.",
     title: "Maxfiylik siyosati",
-    updated: "Oxirgi yangilanish: 2026-yil 25-oktabr",
+    updated: "Oxirgi yangilanish: 2026-yil 26-oktabr",
     intro: "Bu sahifa nexura.uz saytida qanday ma’lumotlar yigʻilishi, ular nima uchun ishlatilishi va qayerda saqlanishini tushuntiradi.",
     sections: [
       {
@@ -184,7 +184,7 @@ export const uz = {
       {
         title: "Cookie va brauzer xotirasi",
         body: [
-          "Sayt brauzeringiz xotirasida ikkita narsani saqlaydi: qaysi havola orqali kelganingiz (yuqorida aytilgan) va cookie haqidagi xabarni yopganingiz. Hozircha analitika yoki reklama vositalari ulanmagan. Ular qoʻshilsa, bu sahifa yangilanadi.",
+          "Saytni yaxshilash uchun Google Analytics’dan foydalanamiz: qaysi sahifalar ochilgani, qaysi tugmalar bosilgani va qayerdan kelganingiz. Analitika cookie’lari faqat siz rozilik bersangiz yoqiladi; rad etsangiz, Google faqat cookie’siz umumiy statistikani oladi. Analitikaga ism, telefon yoki boshqa shaxsiy ma’lumotlar yuborilmaydi. Brauzeringiz xotirasida, shuningdek, qaysi havola orqali kelganingiz va cookie boʻyicha tanlovingiz saqlanadi. Reklama vositalari ishlatilmaydi.",
         ],
       },
       {
@@ -197,9 +197,10 @@ export const uz = {
     contactTitle: "Bogʻlanish",
   },
   cookie: {
-    text: "Sayt ishlashi uchun cookie va brauzer xotirasidan foydalanamiz.",
+    text: "Saytni yaxshilash uchun Google Analytics cookie’laridan foydalanamiz. Shaxsiy ma’lumotlar yigʻilmaydi.",
     link: "Batafsil",
-    ok: "OK",
+    ok: "Roziman",
+    decline: "Rad etish",
   },
   faq: {
     eyebrow: "Savollar",

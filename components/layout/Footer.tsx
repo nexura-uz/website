@@ -29,7 +29,7 @@ export async function Footer({ locale }: { locale: Locale }) {
     .filter((l): l is { label: string; href: string } => l.href !== null);
 
   return (
-    <footer className="mt-auto bg-light-gray px-5 md:px-8">
+    <footer data-cta="footer" className="mt-auto bg-light-gray px-5 md:px-8">
       <div className="mx-auto max-w-[1200px] pb-10 pt-16 md:pt-24">
         <div className="grid grid-cols-2 gap-x-6 gap-y-12 md:grid-cols-12 md:gap-8">
           <div className="col-span-2 md:col-span-4">

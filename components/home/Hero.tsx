@@ -10,7 +10,7 @@ export function Hero({ locale }: { locale: Locale }) {
   const t = getDictionary(locale);
 
   return (
-    <section className="overflow-x-clip px-5 pb-20 pt-16 md:px-8 md:pb-32 md:pt-28">
+    <section data-cta="hero" className="overflow-x-clip px-5 pb-20 pt-16 md:px-8 md:pb-32 md:pt-28">
       <div className="mx-auto grid max-w-[1200px] items-center gap-16 lg:grid-cols-12 lg:gap-12">
         <div className="lg:col-span-7">
           <h1 className="text-balance text-[2.125rem] font-semibold leading-[1.03] tracking-[-0.04em] text-black min-[420px]:text-[2.5rem] sm:text-6xl lg:text-[3.5rem] xl:text-[4.25rem]">

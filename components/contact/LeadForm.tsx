@@ -5,6 +5,8 @@ import { usePathname } from "next/navigation";
 import { useActionState, useEffect, useRef, useState } from "react";
 import type { Dictionary } from "@/content/dictionaries";
 import { submitLead } from "@/lib/actions/lead";
+import { LEAD_KEY } from "@/components/analytics/LeadTracker";
+import { track } from "@/lib/analytics";
 import { readAttribution } from "@/lib/attribution";
 import type { Locale } from "@/lib/i18n";
 import { leadBudgets, leadTimelines, type LeadState } from "@/lib/lead";
@@ -41,6 +43,10 @@ export function LeadForm({ locale, t, services, telegramHref, preset }: Props) {
   const submit = (fd: FormData) => {
     for (const [k, v] of Object.entries(readAttribution())) if (v) fd.set(k, v);
     fd.set("t", String(startedAt.current));
+    try {
+      const lead = { service: String(fd.get("service")), budget: String(fd.get("budget")), timeline: String(fd.get("timeline")), locale };
+      sessionStorage.setItem(LEAD_KEY, JSON.stringify(lead));
+    } catch {}
     action(fd);
   };
 
@@ -52,6 +58,15 @@ export function LeadForm({ locale, t, services, telegramHref, preset }: Props) {
       ?.querySelectorAll<HTMLInputElement>(`input[name="${STEPS[prev]}"]`)
       .forEach((input) => (input.checked = false));
     setStep(prev);
+  };
+  const started = useRef(false);
+  const pick = (name: (typeof STEPS)[number]) => () => {
+    if (!started.current) {
+      started.current = true;
+      track("form_start", { locale });
+    }
+    track("form_step", { step: STEPS.indexOf(name) + 1, step_name: name, locale });
+    next();
   };
   const next = () => setTimeout(() => setStep((s) => Math.min(s + 1, STEPS.length - 1)), 160);
 
@@ -75,13 +90,13 @@ export function LeadForm({ locale, t, services, telegramHref, preset }: Props) {
       </div>
 
       <Step active={step === 0} title={t.steps.service}>
-        <Options name="service" options={services} onPick={next} defaultValue={preset} />
+        <Options name="service" options={services} onPick={pick("service")} defaultValue={preset} />
       </Step>
       <Step active={step === 1} title={t.steps.budget}>
-        <Options name="budget" options={leadBudgets.map((k) => ({ key: k, label: t.budgets[k] }))} onPick={next} />
+        <Options name="budget" options={leadBudgets.map((k) => ({ key: k, label: t.budgets[k] }))} onPick={pick("budget")} />
       </Step>
       <Step active={step === 2} title={t.steps.timeline}>
-        <Options name="timeline" options={leadTimelines.map((k) => ({ key: k, label: t.timelines[k] }))} onPick={next} />
+        <Options name="timeline" options={leadTimelines.map((k) => ({ key: k, label: t.timelines[k] }))} onPick={pick("timeline")} />
       </Step>
 
       <Step active={step === 3} title={t.steps.contact}>

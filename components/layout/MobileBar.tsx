@@ -9,6 +9,7 @@ export function MobileBar({ locale }: { locale: Locale }) {
 
   return (
     <nav
+      data-cta="mobile_bar"
       aria-label={`${t.mobileBar.telegram} / ${t.mobileBar.call}`}
       className="fixed inset-x-0 bottom-0 z-40 grid grid-cols-2 border-t border-white/10 bg-primary pb-[env(safe-area-inset-bottom)] text-white lg:hidden"
     >

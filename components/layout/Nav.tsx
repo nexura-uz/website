@@ -58,7 +58,7 @@ export function Nav({ locale, t, services, links, homeHref, contactHref, telegra
   };
 
   return (
-    <header className="sticky top-0 z-40 border-b border-gray/15 bg-white">
+    <header data-cta="header" className="sticky top-0 z-40 border-b border-gray/15 bg-white">
       <div className="mx-auto flex h-16 max-w-[1200px] items-center gap-10 px-5 md:h-[72px] md:px-8">
         <Link href={homeHref} onClick={close} className="shrink-0 rounded-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-4">
           <Logo variant="lockup" className="h-6 w-auto text-primary md:h-7" />

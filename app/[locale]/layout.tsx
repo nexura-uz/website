@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Geologica } from "next/font/google";
 import { notFound } from "next/navigation";
 import { Attribution } from "@/components/Attribution";
+import { GoogleAnalytics } from "@/components/analytics/GoogleAnalytics";
 import { CookieNotice } from "@/components/legal/CookieNotice";
 import { Footer } from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
@@ -46,6 +47,7 @@ export default async function LocaleLayout({ children, params }: LayoutProps<"/[
         {children}
         <Footer locale={locale} />
         <MobileBar locale={locale} />
+        <GoogleAnalytics />
         <CookieNotice t={getDictionary(locale).cookie} privacyHref={href(locale, "privacy")!} />
       </body>
     </html>

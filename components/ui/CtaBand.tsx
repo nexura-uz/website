@@ -14,7 +14,7 @@ export function CtaBand({
   telegram: { label: string; href: string };
 }) {
   return (
-    <section className="bg-primary px-5 py-24 text-white md:px-8 md:py-32">
+    <section data-cta="cta_band" className="bg-primary px-5 py-24 text-white md:px-8 md:py-32">
       <div className="mx-auto max-w-[1200px] text-center">
         <h2 className="text-balance text-3xl font-semibold tracking-[-0.03em] md:text-5xl">{title}</h2>
         <p className="mx-auto mt-5 max-w-xl text-lg text-white/70">{text}</p>

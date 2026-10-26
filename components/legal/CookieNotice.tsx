@@ -4,33 +4,31 @@ import { AnimatePresence, motion } from "motion/react";
 import Link from "next/link";
 import { useState, useSyncExternalStore } from "react";
 import type { Dictionary } from "@/content/dictionaries";
+import { CONSENT_KEY, setConsent } from "@/lib/analytics";
 
-const KEY = "nx_cookie_ok";
 const noop = () => () => {};
-// Server snapshot says "seen" so the notice never flashes in the static HTML.
-const readSeen = () => {
+// Server snapshot says "chosen" so the notice never flashes in the static HTML.
+const readChosen = () => {
   try {
-    return localStorage.getItem(KEY) === "1";
+    return localStorage.getItem(CONSENT_KEY) !== null;
   } catch {
     return true;
   }
 };
 
-// Informational notice only: nothing here tracks yet. Needs accept/decline once analytics is added (CLAUDE.md §9.4).
+// Consent for GA4 (Consent Mode v2, CLAUDE.md §9.4): analytics cookies only after Accept.
 export function CookieNotice({ t, privacyHref }: { t: Dictionary["cookie"]; privacyHref: string }) {
-  const seen = useSyncExternalStore(noop, readSeen, () => true);
+  const chosen = useSyncExternalStore(noop, readChosen, () => true);
   const [closed, setClosed] = useState(false);
 
-  const accept = () => {
-    try {
-      localStorage.setItem(KEY, "1");
-    } catch {}
+  const choose = (choice: "granted" | "denied") => {
+    setConsent(choice);
     setClosed(true);
   };
 
   return (
     <AnimatePresence>
-      {!seen && !closed && (
+      {!chosen && !closed && (
         <motion.div
           role="region"
           aria-label="Cookie"
@@ -38,7 +36,7 @@ export function CookieNotice({ t, privacyHref }: { t: Dictionary["cookie"]; priv
           animate={{ y: 0, opacity: 1 }}
           exit={{ y: 24, opacity: 0 }}
           transition={{ duration: 0.3, ease: [0.22, 1, 0.36, 1] }}
-          className="fixed inset-x-3 bottom-[calc(4.5rem+env(safe-area-inset-bottom))] z-50 lg:bottom-6 flex items-center gap-4 rounded-2xl border border-gray/15 bg-white p-4 pl-5 shadow-xl shadow-black/10 sm:inset-x-auto sm:left-6 sm:max-w-md"
+          className="fixed inset-x-3 bottom-[calc(4.5rem+env(safe-area-inset-bottom))] z-50 rounded-2xl border border-gray/15 bg-white p-4 pl-5 shadow-xl shadow-black/10 sm:inset-x-auto sm:left-6 sm:max-w-md lg:bottom-6"
         >
           <p className="text-sm leading-snug text-black/80">
             {t.text}{" "}
@@ -46,13 +44,22 @@ export function CookieNotice({ t, privacyHref }: { t: Dictionary["cookie"]; priv
               {t.link}
             </Link>
           </p>
-          <button
-            type="button"
-            onClick={accept}
-            className="h-10 shrink-0 rounded-full bg-primary px-5 text-sm font-medium text-white transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
-          >
-            {t.ok}
-          </button>
+          <div className="mt-3 flex items-center justify-end gap-2">
+            <button
+              type="button"
+              onClick={() => choose("denied")}
+              className="h-10 rounded-full px-4 text-sm font-medium text-gray transition-colors hover:text-black focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
+            >
+              {t.decline}
+            </button>
+            <button
+              type="button"
+              onClick={() => choose("granted")}
+              className="h-10 rounded-full bg-primary px-5 text-sm font-medium text-white transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
+            >
+              {t.ok}
+            </button>
+          </div>
         </motion.div>
       )}
     </AnimatePresence>

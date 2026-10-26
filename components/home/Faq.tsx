@@ -19,7 +19,7 @@ export function Faq({ locale }: { locale: Locale }) {
     .join("; ");
 
   return (
-    <section className="border-t border-gray/15 px-5 py-24 md:px-8 md:py-40">
+    <section data-cta="faq" className="border-t border-gray/15 px-5 py-24 md:px-8 md:py-40">
       <div className="mx-auto grid max-w-[1200px] gap-12 lg:grid-cols-12">
         <div className="lg:col-span-4">
           <div className="lg:sticky lg:top-28">

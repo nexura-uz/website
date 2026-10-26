@@ -17,7 +17,7 @@ export function ContactPage({ locale }: { locale: Locale }) {
   ];
 
   return (
-    <main className="flex-1 px-5 pb-24 pt-14 md:px-8 md:pb-36 md:pt-24">
+    <main data-cta="contact" className="flex-1 px-5 pb-24 pt-14 md:px-8 md:pb-36 md:pt-24">
       {/* Mobile order: intro → form → direct contacts. Desktop: intro and contacts left, form right. */}
       <div className="mx-auto grid max-w-[1200px] gap-10 lg:grid-cols-12 lg:gap-x-16 lg:gap-y-0">
         <div className="lg:col-span-5">
