@@ -482,6 +482,8 @@ One A/B test per month (headline, primary CTA Telegram vs form, prices shown vs 
 | Founder video | **TBD** | Placeholder section |
 | Fonts | ✅ **Geologica** (§5 Typography) | — |
 | Logo & palette | ✅ **v1 logo + palette v2 done** (§5.1–5.2) | Use as-is. A "block N" v2 logo may come later; the `<Logo>` component makes it a drop-in swap. |
+| Goodwell mobile app | ⚠️ **Unlisted on the App Store** | Never link or mention the App Store listing; describe the app in text only. |
+| Dueflo, Nord Fiord | **Not shown for now** (founder, 2026-10-26) | Don't add them to projects, cases or copy until the founder approves. |
 | One AI project | ⚠️ **Under NDA** | Never name, describe, screenshot or hint at it anywhere (site, cases, SEO copy, this repo). It only backs our ability to deliver AI features. |
 | Taste skill A vs B | Decide after the hero test (§6) | — |
 

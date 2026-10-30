@@ -37,23 +37,6 @@ export function AboutPage({ locale }: { locale: Locale }) {
         </dl>
       </section>
 
-      <section className="px-5 py-24 md:px-8 md:py-36">
-        <div className="mx-auto grid max-w-[1200px] gap-10 lg:grid-cols-12">
-          <h2 className="text-3xl font-semibold tracking-[-0.03em] text-black md:text-4xl lg:col-span-4">{a.storyTitle}</h2>
-          <div className="lg:col-span-7 lg:col-start-6">
-            {a.story.map((p) => (
-              <p key={p} className="mb-6 text-pretty text-lg leading-relaxed text-black/80 md:text-xl md:leading-relaxed">
-                {p}
-              </p>
-            ))}
-            <p className="mt-10 flex items-center gap-3 text-[15px] text-gray">
-              <span aria-hidden className="h-px w-8 bg-accent" />
-              {a.signature}
-            </p>
-          </div>
-        </div>
-      </section>
-
       <section className="bg-light-gray px-5 py-24 md:px-8 md:py-36">
         <div className="mx-auto max-w-[1200px]">
           <div className="grid gap-6 lg:grid-cols-12 lg:items-end">
@@ -118,8 +101,8 @@ export function AboutPage({ locale }: { locale: Locale }) {
               <Image
                 src="/work/easysale.jpg"
                 alt={`EasySale: ${a.productText}`}
-                width={2560}
-                height={1440}
+                width={3200}
+                height={2000}
                 sizes="(min-width: 1200px) 640px, (min-width: 1024px) 55vw, 100vw"
                 className="h-auto w-full"
               />

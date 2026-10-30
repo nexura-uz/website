@@ -254,13 +254,6 @@ export const uz = {
       { n: "20+", label: "tugallangan loyiha" },
       { n: "10+", label: "doʻkon EasySale’da ishlaydi" },
     ],
-    storyTitle: "Nega Nexura?",
-    story: [
-      "Oʻzbekistondagi koʻp bizneslar hali ham daftar, Excel va Telegram guruhlarda yuritiladi. Buyurtmalar yoʻqoladi, ombordagi qoldiq taxminan ma’lum, filiallarda nima boʻlayotganini egasi kechqurun qoʻngʻiroq qilib bilib oladi.",
-      "Biz bunday bizneslar uchun tizimlar quramiz: kichik Telegram botdan tortib butun doʻkonlar tarmogʻini boshqaradigan tizimgacha. Hozirgacha mijozlarimizning deyarli hammasi tavsiya orqali kelgan: biri bilan yaxshi ishlasak, u keyingisini olib keladi.",
-      "Oʻz mahsulotimiz EasySale’ni ham shu tajribadan yaratdik. Bugun u 10+ doʻkonda har kuni ishlaydi. Demak, biz dasturni nafaqat topshiramiz, balki yillar davomida qoʻllab-quvvatlashni ham bilamiz.",
-    ],
-    signature: "Muhammadaziz, Nexura asoschisi",
     teamTitle: "Jamoa va texnologiyalar",
     teamSub: "Har bir yoʻnalishda shu ish bilan yillar davomida shugʻullangan mutaxassis.",
     team: [
@@ -609,10 +602,10 @@ export const uz = {
   },
   cases: {
     "ustaxona": {
-      "name": "Ustaxona Jadval",
-      "type": "Telegram bot",
-      "text": "Ustaxonaning qogʻoz daftarini almashtirgan bot: buyurtmalar endi daftarda emas, botda yoziladi.",
-      "url": "https://t.me/jadval_ustaxonabot"
+      "name": "Ustaxona",
+      "type": "Oʻz mahsulotimiz: veb-ilova, Telegram bot va Mini App",
+      "text": "Ta’mirxonalar uchun bitta ilova: buyurtmalar, mijozlar va qarzlar bir joyda, mijoz esa ta’mir holatini Telegramda kuzatadi.",
+      "url": "https://ustaxona.uz"
     },
     "goodwellBot": {
       "name": "Goodwell Catalog",
@@ -645,15 +638,47 @@ export const uz = {
   },
   projects: {
     metaTitle: "Loyihalar: Goodwell, Midea, EasySale | Nexura",
-    metaDescription: "Nexura loyihalari: Goodwell doʻkonlar tarmogʻi tizimi, Midea Kitchen internet doʻkoni, EasySale ERP/POS, Telegram botlar.",
+    metaDescription: "Nexura loyihalari: Goodwell doʻkonlar tarmogʻi tizimi, Midea Kitchen internet doʻkoni, EasySale ERP/POS, Ustaxona va Telegram botlar.",
     eyebrow: "Loyihalar",
     title: "Biz qurgan tizimlar",
     sub: "20+ loyihadan mijozlar ochiq koʻrsatishga ruxsat berganlari. Qolganlari maxfiylik kelishuvi ostida.",
     featuredEyebrow: "Asosiy loyiha",
     featuredTitle: "Goodwell doʻkonlar tarmogʻi",
-    featuredText: "Bitta brend uchun uchta mahsulot: doʻkonlarni boshqaradigan tizim, xodimlar uchun ilova va mijozlar uchun katalog bot.",
-    webTitle: "Internet doʻkon va oʻz mahsulotimiz",
-    botsTitle: "Telegram botlar",
+    featuredText: "Bitta brend uchun ikki mahsulot: doʻkonlarni boshqaradigan tizim va xodimlar uchun ilova.",
+    webTitle: "Internet doʻkon",
+    easysale: {
+      eyebrow: "Oʻz mahsulotimiz",
+      about: "Doʻkonlar uchun kassa va ombor tizimi. Kassada sotilgan har bir tovar omborda oʻzi kamayadi, kunlik hisobot esa oʻzi tayyor boʻladi.",
+      problem: "Kichik doʻkonda savdo daftarda yoki Excel’da yoziladi: qoldiq taxminan bilinadi, tovar tugaganini kech sezasiz, filiallar savdosini bilish uchun har biriga qoʻngʻiroq qilasiz.",
+      features: [
+        { title: "Kassa", text: "Sotuv bir necha bosishda, chek printerdan chiqadi; naqd va karta alohida hisoblanadi." },
+        { title: "Ombor", text: "Qoldiq har bir sotuvdan keyin kamayadi, tovar tugayotganda ogohlantirish keladi." },
+        { title: "Filiallar", text: "Bir nechta doʻkon bitta paneldan: ombor va savdo hamma joyda bir xil, jami summa oʻzi qoʻshiladi." },
+        { title: "Xodimlar", text: "Ish jadvali, har bir kassirning savdosi va maoshlar bir joyda." },
+        { title: "Hisobotlar", text: "Savdo, ombor va mijozlar boʻyicha kun, hafta va oy kesimida." },
+        { title: "Chegirma va sodiqlik", text: "Chegirmali savdo va doimiy mijozlar uchun sodiqlik dasturi." },
+      ],
+      platforms: "Kompyuterda va mobil ilovada: savdoni doʻkondan uzoqda ham kuzatasiz. Boshqa tizimlar bilan API orqali ulanadi.",
+      shotAlt: "EasySale: kassa ekrani va chek",
+    },
+    ustaxona: {
+      eyebrow: "Oʻz mahsulotimiz",
+      about: "Har qanday ta’mirxona va servis markazlari uchun platforma: telefon, noutbuk, avtomobil, kir yuvish mashinasi, konditsioner va boshqalar.",
+      problem: "Koʻp ustaxonalar hali ham daftar va telefon bilan ishlaydi. Buyurtmalar yoʻqoladi, kim qarz ekani esdan chiqadi, mijozlar esa qayta-qayta qoʻngʻiroq qiladi: “Tayyor boʻldimi?”",
+      features: [
+        { title: "Aniq qadamli buyurtmalar", text: "Qabul qilindi → ta’mirlanmoqda → tayyor → topshirildi. Har bir oʻzgarish buyurtma tarixida saqlanadi." },
+        { title: "Telegram xabarlari", text: "Mijoz botga raqamini bir marta yuboradi va har bir holat oʻzgarishida xabar oladi." },
+        { title: "Mijozlar va balans", text: "Buyurtmalar, toʻlovlar va qarz bitta sahifada; qarzdorlar alohida roʻyxatda. Balans yozuvlardan hisoblanadi, qoʻlda kiritilmaydi." },
+        { title: "Ishlar va qismlar", text: "Summa bajarilgan ish va qismlardan hisoblanadi. Katalogda 14 toifa, ~200 brend, ~600 model va 1000+ qism turi." },
+        { title: "Hisobotlar", text: "Kun, hafta yoki oy boʻyicha buyurtmalar, pul va eng koʻp ketgan qismlar; muddati oʻtganlar bir qarashda." },
+        { title: "Jamoa va baholar", text: "Ustalar havola orqali qoʻshiladi, kim qabul qilgani va topshirgani yoziladi. Mijoz xizmatni Telegramda 1–5 bilan baholaydi." },
+      ],
+      platforms: "Kompyuterda, telefonda va Telegram ichida Mini App sifatida. Oʻzbek va rus tillarida.",
+      stackTitle: "Texnologiyalar",
+      appLabel: "Ilova",
+      botLabel: "Telegram bot",
+      shotAlt: "Ustaxona: buyurtmalar roʻyxati, kompyuterda va telefonda",
+    },
   },
   thanks: {
     metaTitle: "Rahmat! | Nexura",
