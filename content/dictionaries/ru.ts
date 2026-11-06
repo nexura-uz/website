@@ -422,7 +422,8 @@ export const ru: Dictionary = {
       "timeline": "2–4 недели",
       "note": "Лендинг или страница одного продукта стоит дешевле. Цена зависит от количества страниц.",
       "cases": [
-        "midea"
+        "midea",
+        "techvision"
       ],
       "faq": [
         {
@@ -476,7 +477,8 @@ export const ru: Dictionary = {
       ],
       "timeline": "По этапам",
       "cases": [
-        "midea"
+        "midea",
+        "techvision"
       ],
       "faq": [
         {

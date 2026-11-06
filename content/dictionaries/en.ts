@@ -392,7 +392,8 @@ export const en: Dictionary = {
       "timeline": "2–4 weeks",
       "note": "A landing or single product page costs less. Price depends on the number of pages.",
       "cases": [
-        "midea"
+        "midea",
+        "techvision"
       ],
       "faq": [
         {
@@ -442,7 +443,8 @@ export const en: Dictionary = {
       ],
       "timeline": "In stages",
       "cases": [
-        "midea"
+        "midea",
+        "techvision"
       ],
       "faq": [
         {

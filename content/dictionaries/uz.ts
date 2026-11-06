@@ -419,7 +419,8 @@ export const uz = {
       "timeline": "2–4 hafta",
       "note": "Landing yoki bitta mahsulot sahifasi arzonroq turadi. Narx sahifalar soniga bogʻliq.",
       "cases": [
-        "midea"
+        "midea",
+        "techvision"
       ],
       "faq": [
         {
@@ -473,7 +474,8 @@ export const uz = {
       ],
       "timeline": "Bosqichma-bosqich",
       "cases": [
-        "midea"
+        "midea",
+        "techvision"
       ],
       "faq": [
         {
