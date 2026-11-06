@@ -584,6 +584,12 @@ export const en: Dictionary = {
       "text": "The online store for Midea kitchen appliances in Uzbekistan.",
       "url": "https://midea-kitchen.uz"
     },
+    "techvision": {
+      "name": "TechVision",
+      "type": "E-commerce",
+      "text": "An online store for a computer shop and service center: a catalog of laptops, PCs, printers and security cameras, with a cart and a repair section.",
+      "url": "https://tech-vision.uz"
+    },
     "goodwell": {
       "name": "Goodwell",
       "type": "Business system & integration",

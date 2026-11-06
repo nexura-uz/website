@@ -6,8 +6,12 @@ import type { Locale } from "@/lib/i18n";
 import { href } from "@/lib/routes";
 import { telegramLink } from "@/site.config";
 
-// Only work clients allow us to show. TechVision (live site broken) and ENDO (weak) are left out on purpose.
+// Only work clients allow us to show. ENDO (weak) is left out on purpose.
 const goodwellParts = ["goodwell", "goodwellApp"] as const;
+const webShops = [
+  { key: "midea", src: "/work/midea.jpg", height: 1440 },
+  { key: "techvision", src: "/work/techvision.jpg", height: 1240 },
+] as const;
 
 const domain = (url: string) => url.replace(/^https:\/\//, "");
 
@@ -158,19 +162,26 @@ export function ProjectsPage({ locale }: { locale: Locale }) {
       <section className="border-t border-gray/15 px-5 py-24 md:px-8 md:py-32">
         <div className="mx-auto max-w-[1200px]">
           <h2 className="text-3xl font-semibold tracking-[-0.03em] text-black md:text-4xl">{p.webTitle}</h2>
-          <article className="mt-12 grid gap-8 md:grid-cols-12">
-            <a href={cases.midea.url} target="_blank" rel="noopener" className="group block md:col-span-7">
-              <div className="overflow-hidden rounded-2xl border border-gray/15 bg-white shadow-[0_30px_60px_-30px] shadow-black/20 transition-transform duration-300 group-hover:-translate-y-1">
-                <div className="flex h-8 items-center justify-center border-b border-gray/10 bg-light-gray font-mono text-[11px] text-gray">{domain(cases.midea.url)}</div>
-                <Image src="/work/midea.jpg" alt={`${cases.midea.name}: ${cases.midea.text}`} width={2560} height={1440} sizes="(min-width: 1200px) 680px, (min-width: 768px) 58vw, 100vw" className="h-auto w-full" />
-              </div>
-            </a>
-            <div className="md:col-span-5 md:self-end">
-              <h3 className="text-2xl font-semibold tracking-[-0.02em] text-black">{cases.midea.name}</h3>
-              <p className="mt-2 font-mono text-[13px] text-gray">{cases.midea.type}</p>
-              <p className="mt-4 text-pretty text-[17px] leading-relaxed text-gray">{cases.midea.text}</p>
-            </div>
-          </article>
+          <div className="mt-12 space-y-16 md:space-y-24">
+            {webShops.map(({ key, src, height }, i) => {
+              const c = cases[key];
+              return (
+                <article key={key} className="grid gap-8 md:grid-cols-12">
+                  <a href={c.url} target="_blank" rel="noopener" className={`group block md:col-span-7 ${i % 2 ? "md:order-last" : ""}`}>
+                    <div className="overflow-hidden rounded-2xl border border-gray/15 bg-white shadow-[0_30px_60px_-30px] shadow-black/20 transition-transform duration-300 group-hover:-translate-y-1">
+                      <div className="flex h-8 items-center justify-center border-b border-gray/10 bg-light-gray font-mono text-[11px] text-gray">{domain(c.url)}</div>
+                      <Image src={src} alt={`${c.name}: ${c.text}`} width={2560} height={height} sizes="(min-width: 1200px) 680px, (min-width: 768px) 58vw, 100vw" className="h-auto w-full" />
+                    </div>
+                  </a>
+                  <div className="md:col-span-5 md:self-end">
+                    <h3 className="text-2xl font-semibold tracking-[-0.02em] text-black">{c.name}</h3>
+                    <p className="mt-2 font-mono text-[13px] text-gray">{c.type}</p>
+                    <p className="mt-4 text-pretty text-[17px] leading-relaxed text-gray">{c.text}</p>
+                  </div>
+                </article>
+              );
+            })}
+          </div>
         </div>
       </section>
 

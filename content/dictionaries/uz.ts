@@ -619,6 +619,12 @@ export const uz = {
       "text": "Midea oshxona texnikasining Oʻzbekistondagi internet doʻkoni.",
       "url": "https://midea-kitchen.uz"
     },
+    "techvision": {
+      "name": "TechVision",
+      "type": "Internet doʻkon",
+      "text": "Kompyuter doʻkoni va servis markazi uchun internet doʻkon: noutbuk, kompyuter, printer va kuzatuv kameralari katalogi, savatcha va servis boʻlimi.",
+      "url": "https://tech-vision.uz"
+    },
     "goodwell": {
       "name": "Goodwell",
       "type": "Biznes tizim va integratsiya",
