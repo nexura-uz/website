@@ -52,15 +52,21 @@ Retire the old taglines ("Kelajak ilovalarini bugun yaratish", "Building tomorro
 ### Portfolio (ranked by value)
 | Project | What | Notes |
 |---|---|---|
-| **Goodwell shop network** | Custom system managing all of the brand's shops nationwide, **integrated with their internal warehouse system** | ⭐ Flagship. Numbers, screenshots and quote: **TBD (requested from Goodwell)** |
-| **EasySale** | Own retail ERP/POS SaaS, 10+ paying stores | ⭐ Links to easysale.uz |
+| **Goodwell** (retail chain) | Several custom projects (business system, app, catalog bot), built and supported by us | ⭐ Flagship **by name only**: what the system does is a sales secret (2026-11-16 sync below). Prospects may call Goodwell for a reference |
+| **EasySale** | Own retail POS + stock + debts, 10+ shops, from 190k soʻm/month, 14-day free trial | ⭐ Links to easysale.uz |
 | **Midea Kitchen** | E-commerce for Midea kitchen appliances, midea-kitchen.uz | ⭐ Global brand |
-| **Ustaxona Jadval** | Telegram bot replacing a workshop's paper notebook, t.me/jadval_ustaxonabot | Perfect "notebook → bot" story |
+| **Ustaxona** | Own app for repair shops (web app + Telegram bot), ustaxona.uz, free for up to 3 masters in one shop | Replaces the old Ustaxona Jadval bot. Copy: `nexura-portfolio.md` |
 | **TechVision** | Electronics e-commerce, tech-vision.uz | |
 | **Goodwell Catalog** | Telegram catalog bot, t.me/goodwellcatalog_bot | |
 | ENDO technologies | Company site, endo-tech.uz | Weak. Rewrite the blurb or drop it. |
 
-Client logos (Midea, Goodwell, TechVision): **founder confirmed they can be shown.**
+Client logos (Midea Kitchen, Goodwell, TechVision): **founder confirmed they can be shown.** Name Midea Kitchen as "Midea Kitchen", never just "Midea".
+
+**Synced from the SMM project, 2026-11-16 (real product data; these win over older lines in this file):**
+- **Goodwell:** say only "Goodwell, a retail chain, is our client. We built and support several custom projects for them; ask them about us." Never say or show what the system does (warehouse/ERP integration, QR, cashback, roles, credit terms), numbers, screenshots or price.
+- **EasySale, never claim:** shifts, salaries, a combined report across stores, native mobile app, API, Excel import, fiscal receipts, Click/Payme. It runs in the browser (installable on the phone), with barcode scanner and 80 mm receipt printer.
+- **Ustaxona:** no Telegram Mini App (removed 2026-11-07); customers get Telegram messages. Catalog: 14 categories, ~930 brands, ~5400 models, ~5100 part types. Team up to 3 people.
+- Product sources: `../../easysale/CLAUDE.md`, `../../ustaxona-uz/CLAUDE.md`, `../nexura-smm/CLAUDE.md` §3, §8, §9.
 
 ### Pricing (draft; final numbers come from the planning project after a competitor price check)
 Local (UZ/RU pages show "…dan boshlab" / "от …"):

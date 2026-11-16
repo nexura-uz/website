@@ -56,7 +56,7 @@ export const en: Dictionary = {
     primary: "Book a 20-min call",
     telegram: "or message us on Telegram",
     platforms: "Web · iOS · Android · Windows · macOS",
-    trust: "Midea, Goodwell and 10+ retail stores run on software we built.",
+    trust: "Midea Kitchen, Goodwell and 10+ retail stores run on software we built.",
     telegramText: "Hi! I found Nexura on your website and would like to discuss a project.",
   },
   sheet: {
@@ -216,7 +216,7 @@ export const en: Dictionary = {
       },
       {
         q: "Can you integrate with the software we already use?",
-        a: "Yes, it’s a core part of our work. For example, we integrated the system behind Goodwell’s nationwide shop network with their internal warehouse system. We review your current setup first, then propose an integration plan.",
+        a: "Yes, it’s a core part of our work. We review your current setup first, then propose an integration plan.",
       },
       {
         q: "Can you add AI to our system?",
@@ -558,7 +558,7 @@ export const en: Dictionary = {
         },
         {
           "q": "Can you integrate with the software we already use?",
-          "a": "Yes. For example, we integrated Goodwell’s nationwide shop system with their internal warehouse system."
+          "a": "Yes. We review your current setup first, then propose an integration plan."
         },
         {
           "q": "Can we roll it out in stages?",
@@ -570,7 +570,7 @@ export const en: Dictionary = {
   cases: {
     "ustaxona": {
       "name": "Ustaxona",
-      "type": "Our own product: web app, Telegram bot and Mini App",
+      "type": "Our own product: web app and Telegram bot",
       "text": "One app for repair shops: orders, customers and debts in one place, and the customer follows the repair in Telegram.",
       "url": "https://ustaxona.uz"
     },
@@ -594,13 +594,13 @@ export const en: Dictionary = {
     },
     "goodwell": {
       "name": "Goodwell",
-      "type": "Business system & integration",
-      "text": "A system running all of the brand’s shops nationwide, integrated with their internal warehouse system."
+      "type": "Business system",
+      "text": "A custom business system for a retail chain. We built it and we support it."
     },
     "goodwellApp": {
       "name": "Goodwell",
       "type": "Mobile app",
-      "text": "An internal app for shop staff and sellers: product and stock data via QR code."
+      "text": "An app we built for Goodwell and still support."
     },
     "easysale": {
       "name": "EasySale",
@@ -610,28 +610,28 @@ export const en: Dictionary = {
     }
   },
   projects: {
-    metaTitle: "Our Work: Goodwell, Midea, EasySale | Nexura",
-    metaDescription: "Selected work by Nexura: Goodwell’s nationwide shop system, the Midea Kitchen online store, EasySale ERP/POS, the Ustaxona repair-shop app and Telegram bots.",
+    metaTitle: "Our Work: Goodwell, Midea Kitchen, EasySale | Nexura",
+    metaDescription: "Selected work by Nexura: a business system for Goodwell, the Midea Kitchen online store, EasySale ERP/POS, the Ustaxona repair-shop app and Telegram bots.",
     eyebrow: "Work",
     title: "Systems we’ve built",
     sub: "Selected from 20+ projects: the ones our clients allow us to show. The rest are under NDA.",
     featuredEyebrow: "Flagship project",
     featuredTitle: "Goodwell shop network",
-    featuredText: "Two products for one brand: a system running their shops and an app for store staff.",
+    featuredText: "Several projects for Goodwell, all still supported by us. Ask Goodwell about working with us.",
     webTitle: "E-commerce",
     easysale: {
       eyebrow: "Our own product",
       about: "A point-of-sale and stock system for shops. Every item sold at the till comes off the stock by itself, and the daily report builds itself.",
-      problem: "Small shops track sales in a notebook or Excel: stock levels are a guess, you notice an item ran out too late, and to know how the branches did you call each one.",
+      problem: "Small shops track sales in a notebook or Excel: stock levels are a guess, you notice an item ran out too late, and who owes you what stays in a notebook.",
       features: [
         { title: "Till", text: "A sale in a few taps, receipts from a receipt printer; cash and card are counted separately." },
-        { title: "Stock", text: "Stock goes down with every sale, and you get a warning when an item is running out." },
-        { title: "Branches", text: "Several shops from one panel: stock and sales stay in sync, and the total adds itself up." },
-        { title: "Staff", text: "Shifts, each cashier’s sales and salaries in one place." },
+        { title: "Stock", text: "Stock goes down with every sale, and a reorder list shows what to buy next." },
+        { title: "Branches", text: "Several shops in one account: move goods between them, each keeps its own stock." },
+        { title: "Staff", text: "Each seller’s sales and permissions. On Pro, a history of who changed what and when." },
         { title: "Reports", text: "Sales, stock and customers by day, week and month." },
-        { title: "Discounts and loyalty", text: "Discounted sales and a loyalty program for regular customers." },
+        { title: "Debts and cashback", text: "Customer and supplier debts with statements. On Pro, 2% cashback for regular customers." },
       ],
-      platforms: "On a computer and in the mobile app, so you can follow sales away from the shop. Connects to other systems through an API.",
+      platforms: "On a computer or phone in the browser, and installable on the phone like an app. Works with barcode scanners and 80 mm receipt printers.",
       shotAlt: "EasySale: the till screen and a receipt",
     },
     ustaxona: {
@@ -642,11 +642,11 @@ export const en: Dictionary = {
         { title: "Orders with clear steps", text: "Accepted → in progress → ready → handed over. Every change is stored in the order’s history." },
         { title: "Telegram notifications", text: "The customer shares their phone number with the bot once, then gets a message on every status change." },
         { title: "Customers and balance", text: "Orders, payments and debt on one page; debtors in a separate list. The balance is computed from records, never typed by hand." },
-        { title: "Work and parts", text: "The total comes from work done and parts used. The catalog has 14 categories, ~200 brands, ~600 models and 1000+ part types." },
+        { title: "Work and parts", text: "The total comes from work done and parts used. The catalog has 14 categories, ~930 brands, ~5400 models and ~5100 part types." },
         { title: "Reports", text: "Orders, money and top parts per day, week or month; overdue orders and debts at a glance." },
         { title: "Teams and reviews", text: "Masters join by invite link, and the app records who took and handed over each order. Customers rate the service 1–5 in Telegram." },
       ],
-      platforms: "On a computer, on a phone and inside Telegram as a Mini App. Uzbek and Russian.",
+      platforms: "On a computer and on a phone (installable like an app). Customers get updates in Telegram. Uzbek and Russian.",
       stackTitle: "Stack",
       appLabel: "Web app",
       botLabel: "Telegram bot",

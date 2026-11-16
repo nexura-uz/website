@@ -156,7 +156,7 @@ export function ProjectsPage({ locale }: { locale: Locale }) {
         ]}
         desk={{ src: `${ustaxonaShots}/desk-orders.jpg`, width: 2880, height: 1800, bar: "app.ustaxona.uz" }}
         phone={{ src: `${ustaxonaShots}/phone-orders.jpg`, width: 1170, height: 2532 }}
-        stack={["Python", "FastAPI", "PostgreSQL", "aiogram 3", "Telegram Mini App", "React", "TypeScript", "TanStack", "Next.js"]}
+        stack={["Python", "FastAPI", "PostgreSQL", "aiogram 3", "React", "TypeScript", "TanStack", "Next.js"]}
       />
 
       <section className="border-t border-gray/15 px-5 py-24 md:px-8 md:py-32">

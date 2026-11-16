@@ -1,8 +1,8 @@
 import { getDictionary } from "@/content/dictionaries";
 import type { Locale } from "@/lib/i18n";
 
-// Text names until real SVG logos are added (Midea, Goodwell, TechVision cleared for use).
-const clients = ["Midea", "Goodwell", "TechVision"];
+// Text names until real SVG logos are added (Midea Kitchen, Goodwell, TechVision cleared for use).
+const clients = ["Midea Kitchen", "Goodwell", "TechVision"];
 
 export function Clients({ locale }: { locale: Locale }) {
   const t = getDictionary(locale).clients;

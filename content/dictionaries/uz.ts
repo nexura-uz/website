@@ -54,7 +54,7 @@ export const uz = {
     primary: "Loyihani muhokama qilish",
     telegram: "yoki Telegram’da yozing",
     platforms: "Web · iOS · Android · Windows · macOS",
-    trust: "Midea, Goodwell va 10+ doʻkon bizning dasturlarimiz bilan ishlaydi.",
+    trust: "Midea Kitchen, Goodwell va 10+ doʻkon bizning dasturlarimiz bilan ishlaydi.",
     telegramText: "Salom! Nexura saytidan yozyapman. Loyiham boʻyicha maslahat olmoqchiman.",
   },
   sheet: {
@@ -218,7 +218,7 @@ export const uz = {
       },
       {
         q: "Mavjud dasturimiz (1C, ombor tizimi) bilan bogʻlay olasizlarmi?",
-        a: "Ha. Bu bizning asosiy ishlarimizdan biri: masalan, Goodwell doʻkonlar tarmogʻi tizimini ularning ichki ombor tizimi bilan bogʻlaganmiz. Avval mavjud dasturingizni koʻrib chiqamiz, keyin integratsiya rejasini taklif qilamiz.",
+        a: "Ha. Bu bizning asosiy ishlarimizdan biri. Avval mavjud dasturingizni koʻrib chiqamiz, keyin integratsiya rejasini taklif qilamiz.",
       },
       {
         q: "Loyihada AI ishlatsa boʻladimi?",
@@ -589,7 +589,7 @@ export const uz = {
         },
         {
           "q": "1C yoki mavjud ombor dasturimiz bilan bogʻlay olasizlarmi?",
-          "a": "Ha. Masalan, Goodwell doʻkonlar tarmogʻi tizimini ularning ichki ombor tizimi bilan bogʻlaganmiz."
+          "a": "Ha. Avval mavjud dasturingizni koʻrib chiqamiz, keyin integratsiya rejasini taklif qilamiz."
         },
         {
           "q": "Excel’dagi ma’lumotlarimiz nima boʻladi?",
@@ -605,8 +605,8 @@ export const uz = {
   cases: {
     "ustaxona": {
       "name": "Ustaxona",
-      "type": "Oʻz mahsulotimiz: veb-ilova, Telegram bot va Mini App",
-      "text": "Ta’mirxonalar uchun bitta ilova: buyurtmalar, mijozlar va qarzlar bir joyda, mijoz esa ta’mir holatini Telegramda kuzatadi.",
+      "type": "Oʻz mahsulotimiz: veb-ilova va Telegram bot",
+      "text": "Ta’mirxonalar uchun bitta ilova: buyurtmalar, mijozlar va qarzlar bir joyda, mijoz esa ta’mir holatini Telegramda kuzatadi. Bitta ustaxonada 3 ustagacha bepul.",
       "url": "https://ustaxona.uz"
     },
     "goodwellBot": {
@@ -629,13 +629,13 @@ export const uz = {
     },
     "goodwell": {
       "name": "Goodwell",
-      "type": "Biznes tizim va integratsiya",
-      "text": "Brendning butun mamlakat boʻylab doʻkonlarini boshqaradigan tizim, ularning ichki ombor tizimi bilan bogʻlangan."
+      "type": "Biznes tizim",
+      "text": "Doʻkonlar tarmogʻi uchun maxsus biznes tizim. Biz qurdik va qoʻllab-quvvatlaymiz."
     },
     "goodwellApp": {
       "name": "Goodwell",
       "type": "Mobil ilova",
-      "text": "Doʻkon xodimlari va sotuvchilar uchun ichki ilova: QR-kod orqali mahsulot va ombor ma’lumotlari."
+      "text": "Goodwell uchun qurgan va qoʻllab-quvvatlayotgan ilovamiz."
     },
     "easysale": {
       "name": "EasySale",
@@ -645,28 +645,28 @@ export const uz = {
     }
   },
   projects: {
-    metaTitle: "Loyihalar: Goodwell, Midea, EasySale | Nexura",
-    metaDescription: "Nexura loyihalari: Goodwell doʻkonlar tarmogʻi tizimi, Midea Kitchen internet doʻkoni, EasySale ERP/POS, Ustaxona va Telegram botlar.",
+    metaTitle: "Loyihalar: Goodwell, Midea Kitchen, EasySale | Nexura",
+    metaDescription: "Nexura loyihalari: Goodwell uchun biznes tizim, Midea Kitchen internet doʻkoni, EasySale ERP/POS, Ustaxona va Telegram botlar.",
     eyebrow: "Loyihalar",
     title: "Biz qurgan tizimlar",
     sub: "20+ loyihadan mijozlar ochiq koʻrsatishga ruxsat berganlari. Qolganlari maxfiylik kelishuvi ostida.",
     featuredEyebrow: "Asosiy loyiha",
     featuredTitle: "Goodwell doʻkonlar tarmogʻi",
-    featuredText: "Bitta brend uchun ikki mahsulot: doʻkonlarni boshqaradigan tizim va xodimlar uchun ilova.",
+    featuredText: "Goodwell bilan bir nechta loyiha qildik va hozir ham qoʻllab-quvvatlaymiz. Biz haqimizda Goodwell’ning oʻzidan soʻrashingiz mumkin.",
     webTitle: "Internet doʻkon",
     easysale: {
       eyebrow: "Oʻz mahsulotimiz",
       about: "Doʻkonlar uchun kassa va ombor tizimi. Kassada sotilgan har bir tovar omborda oʻzi kamayadi, kunlik hisobot esa oʻzi tayyor boʻladi.",
-      problem: "Kichik doʻkonda savdo daftarda yoki Excel’da yoziladi: qoldiq taxminan bilinadi, tovar tugaganini kech sezasiz, filiallar savdosini bilish uchun har biriga qoʻngʻiroq qilasiz.",
+      problem: "Kichik doʻkonda savdo daftarda yoki Excel’da yoziladi: qoldiq taxminan bilinadi, tovar tugaganini kech sezasiz, kim qancha qarz ekani esa daftarda qoladi.",
       features: [
         { title: "Kassa", text: "Sotuv bir necha bosishda, chek printerdan chiqadi; naqd va karta alohida hisoblanadi." },
-        { title: "Ombor", text: "Qoldiq har bir sotuvdan keyin kamayadi, tovar tugayotganda ogohlantirish keladi." },
-        { title: "Filiallar", text: "Bir nechta doʻkon bitta paneldan: ombor va savdo hamma joyda bir xil, jami summa oʻzi qoʻshiladi." },
-        { title: "Xodimlar", text: "Ish jadvali, har bir kassirning savdosi va maoshlar bir joyda." },
+        { title: "Ombor", text: "Qoldiq har bir sotuvdan keyin kamayadi. Nimani qayta buyurtma qilish kerakligi roʻyxatda tayyor." },
+        { title: "Filiallar", text: "Bir nechta doʻkon bitta akkauntda: tovarni doʻkonlar orasida koʻchirasiz, har birining qoldigʻi alohida." },
+        { title: "Xodimlar", text: "Har bir sotuvchining savdosi va huquqlari. Pro’da «Tarix»: kim nimani qachon oʻzgartirgani." },
         { title: "Hisobotlar", text: "Savdo, ombor va mijozlar boʻyicha kun, hafta va oy kesimida." },
-        { title: "Chegirma va sodiqlik", text: "Chegirmali savdo va doimiy mijozlar uchun sodiqlik dasturi." },
+        { title: "Nasiya va keshbek", text: "Mijoz va yetkazib beruvchi qarzlari, akt sverka. Pro’da doimiy mijozlarga 2% keshbek." },
       ],
-      platforms: "Kompyuterda va mobil ilovada: savdoni doʻkondan uzoqda ham kuzatasiz. Boshqa tizimlar bilan API orqali ulanadi.",
+      platforms: "Kompyuterda va telefonda, brauzer orqali (telefonga ilova sifatida oʻrnatsa ham boʻladi). Shtrix-kod skaneri va 80 mm chek printeri bilan ishlaydi.",
       shotAlt: "EasySale: kassa ekrani va chek",
     },
     ustaxona: {
@@ -677,11 +677,11 @@ export const uz = {
         { title: "Aniq qadamli buyurtmalar", text: "Qabul qilindi → ta’mirlanmoqda → tayyor → topshirildi. Har bir oʻzgarish buyurtma tarixida saqlanadi." },
         { title: "Telegram xabarlari", text: "Mijoz botga raqamini bir marta yuboradi va har bir holat oʻzgarishida xabar oladi." },
         { title: "Mijozlar va balans", text: "Buyurtmalar, toʻlovlar va qarz bitta sahifada; qarzdorlar alohida roʻyxatda. Balans yozuvlardan hisoblanadi, qoʻlda kiritilmaydi." },
-        { title: "Ishlar va qismlar", text: "Summa bajarilgan ish va qismlardan hisoblanadi. Katalogda 14 toifa, ~200 brend, ~600 model va 1000+ qism turi." },
+        { title: "Ishlar va qismlar", text: "Summa bajarilgan ish va qismlardan hisoblanadi. Katalogda 14 toifa, ~930 brend, ~5400 model va ~5100 qism turi." },
         { title: "Hisobotlar", text: "Kun, hafta yoki oy boʻyicha buyurtmalar, pul va eng koʻp ketgan qismlar; muddati oʻtganlar bir qarashda." },
-        { title: "Jamoa va baholar", text: "Ustalar havola orqali qoʻshiladi, kim qabul qilgani va topshirgani yoziladi. Mijoz xizmatni Telegramda 1–5 bilan baholaydi." },
+        { title: "Jamoa va baholar", text: "Ustalar havola orqali qoʻshiladi (3 kishigacha bepul), kim qabul qilgani va topshirgani yoziladi. Mijoz xizmatni Telegramda 1–5 bilan baholaydi." },
       ],
-      platforms: "Kompyuterda, telefonda va Telegram ichida Mini App sifatida. Oʻzbek va rus tillarida.",
+      platforms: "Kompyuterda va telefonda (telefonga ilova sifatida oʻrnatiladi). Mijoz xabarlarni Telegramda oladi. Oʻzbek va rus tillarida.",
       stackTitle: "Texnologiyalar",
       appLabel: "Ilova",
       botLabel: "Telegram bot",
